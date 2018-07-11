@@ -1,0 +1,1567 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\Cat\Desktop\N76E003用户资料\BSP\N76E003_BSP_Keil_C51_V0.04\Sample_Code\GPIO\GPIO.uvproj
+Project File Date:  04/01/2018
+
+<h2>Output:</h2>
+Build target 'GPIO'
+linking...
+Program Size: data=9.0 xdata=0 code=34
+creating hex file from ".\Output\GPIO"...
+User command #1: .\output\hex2bin.exe .\output\GPIO.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  00000021
+Starting address: 00000000
+Max Length:       34
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 00000021
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM6 .\output\GPIO.bin
+PortName[COM6]
+BaudRate[115200]
+FileSize[34]
+.
+.
+Connect OK
+.Erase Done
+-100%
+Update Done
+".\Output\GPIO" - 0 Error(s), 0 Warning(s).
+Build target 'GPIO'
+linking...
+Program Size: data=9.0 xdata=0 code=34
+creating hex file from ".\Output\GPIO"...
+User command #1: .\output\hex2bin.exe .\output\GPIO.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  00000021
+Starting address: 00000000
+Max Length:       34
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 00000021
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM6 .\output\GPIO.bin
+PortName[COM6]
+BaudRate[115200]
+FileSize[34]
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+Connect Fail
+".\Output\GPIO" - 0 Error(s), 0 Warning(s).
+Rebuild target 'GPIO'
+compiling GPIO.C...
+linking...
+Program Size: data=9.0 xdata=0 code=21
+creating hex file from ".\Output\GPIO"...
+User command #1: .\output\hex2bin.exe .\output\GPIO.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  00000014
+Starting address: 00000000
+Max Length:       21
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 00000014
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM6 .\output\GPIO.bin
+PortName[COM6]
+BaudRate[115200]
+FileSize[21]
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+..........未将对象引用设置到对象的实例。
+Target not created
+Build target 'GPIO'
+linking...
+Program Size: data=9.0 xdata=0 code=21
+creating hex file from ".\Output\GPIO"...
+User command #1: .\output\hex2bin.exe .\output\GPIO.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  00000014
+Starting address: 00000000
+Max Length:       21
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 00000014
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM6 .\output\GPIO.bin
+PortName[COM6]
+BaudRate[115200]
+FileSize[21]
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+..........未将对象引用设置到对象的实例。
+Target not created
+Build target 'GPIO'
+linking...
+Program Size: data=9.0 xdata=0 code=21
+creating hex file from ".\Output\GPIO"...
+User command #1: .\output\hex2bin.exe .\output\GPIO.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  00000014
+Starting address: 00000000
+Max Length:       21
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 00000014
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM6 .\output\GPIO.bin
+PortName[COM6]
+BaudRate[115200]
+FileSize[21]
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+..........未将对象引用设置到对象的实例。
+Target not created
+Build target 'GPIO'
+compiling GPIO.C...
+linking...
+Program Size: data=9.0 xdata=0 code=26
+creating hex file from ".\Output\GPIO"...
+User command #1: .\output\hex2bin.exe .\output\GPIO.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  00000019
+Starting address: 00000000
+Max Length:       26
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 00000019
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM6 .\output\GPIO.bin
+PortName[COM6]
+BaudRate[115200]
+FileSize[26]
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+..........未将对象引用设置到对象的实例。
+".\Output\GPIO" - 0 Error(s), 0 Warning(s).
+Build target 'GPIO'
+compiling GPIO.C...
+linking...
+Program Size: data=9.0 xdata=0 code=38
+creating hex file from ".\Output\GPIO"...
+User command #1: .\output\hex2bin.exe .\output\GPIO.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  00000025
+Starting address: 00000000
+Max Length:       38
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 00000025
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM6 .\output\GPIO.bin
+PortName[COM6]
+BaudRate[115200]
+FileSize[38]
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+..........未将对象引用设置到对象的实例。
+".\Output\GPIO" - 0 Error(s), 0 Warning(s).
+Build target 'GPIO'
+linking...
+Program Size: data=9.0 xdata=0 code=38
+creating hex file from ".\Output\GPIO"...
+User command #1: .\output\hex2bin.exe .\output\GPIO.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  00000025
+Starting address: 00000000
+Max Length:       38
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 00000025
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM6 .\output\GPIO.bin
+PortName[COM6]
+BaudRate[115200]
+FileSize[38]
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+..........未将对象引用设置到对象的实例。
+".\Output\GPIO" - 0 Error(s), 0 Warning(s).
+Build target 'GPIO'
+compiling GPIO.C...
+linking...
+Program Size: data=9.0 xdata=0 code=26
+creating hex file from ".\Output\GPIO"...
+User command #1: .\output\hex2bin.exe .\output\GPIO.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  00000019
+Starting address: 00000000
+Max Length:       26
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 00000019
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM6 .\output\GPIO.bin
+PortName[COM6]
+BaudRate[115200]
+FileSize[26]
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+Connect OK
+.Erase Done
+-100%
+Update Done
+".\Output\GPIO" - 0 Error(s), 0 Warning(s).
+Build target 'GPIO'
+compiling GPIO.C...
+linking...
+Program Size: data=9.0 xdata=0 code=26
+creating hex file from ".\Output\GPIO"...
+User command #1: .\output\hex2bin.exe .\output\GPIO.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  00000019
+Starting address: 00000000
+Max Length:       26
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 00000019
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM6 .\output\GPIO.bin
+PortName[COM6]
+BaudRate[115200]
+FileSize[26]
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+Connect OK
+.Erase Done
+-100%
+Update Done
+".\Output\GPIO" - 0 Error(s), 0 Warning(s).
+Build target 'GPIO'
+compiling GPIO.C...
+linking...
+Program Size: data=9.0 xdata=0 code=21
+creating hex file from ".\Output\GPIO"...
+User command #1: .\output\hex2bin.exe .\output\GPIO.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  00000014
+Starting address: 00000000
+Max Length:       21
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 00000014
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM6 .\output\GPIO.bin
+PortName[COM6]
+BaudRate[115200]
+FileSize[21]
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+Connect OK
+.Erase Done
+-100%
+Update Done
+".\Output\GPIO" - 0 Error(s), 0 Warning(s).
+Build target 'GPIO'
+compiling GPIO.C...
+linking...
+Program Size: data=9.0 xdata=0 code=21
+creating hex file from ".\Output\GPIO"...
+User command #1: .\output\hex2bin.exe .\output\GPIO.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  00000014
+Starting address: 00000000
+Max Length:       21
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 00000014
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM6 .\output\GPIO.bin
+PortName[COM6]
+BaudRate[115200]
+FileSize[21]
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+Connect OK
+.Erase Done
+-100%
+Update Done
+".\Output\GPIO" - 0 Error(s), 0 Warning(s).
+Build target 'GPIO'
+compiling GPIO.C...
+linking...
+Program Size: data=9.0 xdata=0 code=26
+creating hex file from ".\Output\GPIO"...
+User command #1: .\output\hex2bin.exe .\output\GPIO.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  00000019
+Starting address: 00000000
+Max Length:       26
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 00000019
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM6 .\output\GPIO.bin
+PortName[COM6]
+BaudRate[115200]
+FileSize[26]
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+..........未将对象引用设置到对象的实例。
+".\Output\GPIO" - 0 Error(s), 0 Warning(s).
+Build target 'GPIO'
+compiling GPIO.C...
+linking...
+Program Size: data=9.0 xdata=0 code=21
+creating hex file from ".\Output\GPIO"...
+User command #1: .\output\hex2bin.exe .\output\GPIO.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  00000014
+Starting address: 00000000
+Max Length:       21
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 00000014
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM6 .\output\GPIO.bin
+PortName[COM6]
+BaudRate[115200]
+FileSize[21]
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+Connect OK
+.Erase Done
+-100%
+Update Done
+".\Output\GPIO" - 0 Error(s), 0 Warning(s).
+Build target 'GPIO'
+compiling GPIO.C...
+linking...
+Program Size: data=9.0 xdata=0 code=21
+creating hex file from ".\Output\GPIO"...
+User command #1: .\output\hex2bin.exe .\output\GPIO.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  00000014
+Starting address: 00000000
+Max Length:       21
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 00000014
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM6 .\output\GPIO.bin
+PortName[COM6]
+BaudRate[115200]
+FileSize[21]
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+Connect OK
+.Erase Done
+-100%
+Update Done
+".\Output\GPIO" - 0 Error(s), 0 Warning(s).
+Build target 'GPIO'
+compiling GPIO.C...
+linking...
+Program Size: data=9.0 xdata=0 code=26
+creating hex file from ".\Output\GPIO"...
+User command #1: .\output\hex2bin.exe .\output\GPIO.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  00000019
+Starting address: 00000000
+Max Length:       26
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 00000019
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM6 .\output\GPIO.bin
+PortName[COM6]
+BaudRate[115200]
+FileSize[26]
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+Connect OK
+.Erase Done
+-100%
+Update Done
+".\Output\GPIO" - 0 Error(s), 0 Warning(s).

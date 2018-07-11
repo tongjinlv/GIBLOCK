@@ -1,0 +1,106 @@
+C51 COMPILER V9.53.0.0   UART0                                                             07/09/2018 21:29:41 PAGE 1   
+
+
+C51 COMPILER V9.53.0.0, COMPILATION OF MODULE UART0
+OBJECT MODULE PLACED IN .\Output\UART0.obj
+COMPILER INVOKED BY: E:\Soft\keil472a\C51\BIN\C51.EXE Source\UART0.c LARGE OMF2 OPTIMIZE(2,SPEED) BROWSE INCDIR(..\..\In
+                    -clude) DEFINE(FOSC_160000) DEBUG PRINT(.\LST\UART0.lst) OBJECT(.\Output\UART0.obj)
+
+line level    source
+
+   1          #include "include.h"
+   2          uint8_t Mode=0;
+   3          
+   4          
+   5          void Test()
+   6          {
+   7   1          Delayms(200);
+   8   1          HD_Clear(0xff);
+   9   1          PWM_Set(100);
+  10   1          while(1)
+  11   1          {
+  12   2              Delayms(1);
+  13   2              if(R_Data==29)break;
+  14   2          }
+  15   1          PWM_Set(0);
+  16   1      }
+  17          void PowerOFF()
+  18          {
+  19   1          Delayms(200);
+  20   1          HD_Clear(0);
+  21   1          R_Data=0;
+  22   1          while(1)
+  23   1          {
+  24   2              if(R_Data==93)break;
+  25   2          }
+  26   1          Delayms(100);
+  27   1          R_Data=0;
+  28   1      }
+  29          void Pause()
+  30          {
+  31   1          Delayms(200);
+  32   1          R_Data=0;
+  33   1          while(1)
+  34   1          {
+  35   2              if(R_Data==253)break;
+  36   2          }
+  37   1          Delayms(100);
+  38   1          R_Data=0;
+  39   1      }
+  40          void Menu()
+  41          {
+  42   1          uint8_t k=0;
+  43   1          k=Key();
+  44   1          if(R_Data==61||k==0x01){if(Mode<15)Mode++;else Mode=0;HD_Lesson(Mode);JQ_PLay(2);App_Init();Delayms(20
+             -0);JQ_PLay(0);R_Data=0;}
+  45   1          if(R_Data==221||k==0x02){if(Mode>0)Mode--;else Mode=15;HD_Lesson(Mode);JQ_PLay(2);App_Init();Delayms(2
+             -00);JQ_PLay(0);R_Data=0;}
+  46   1          //if(R_Data==157||k==0x01){App_Add();R_Data=0;}
+  47   1          //if(R_Data==87||k==0x02){App_Sub();R_Data=0;}
+  48   1        //  if(R_Data==29){Test();HD_Lesson(Mode);R_Data=0;}
+  49   1          //if(R_Data==93){PowerOFF();HD_Lesson(Mode);R_Data=0;}
+  50   1          if(R_Data==93){HD_Lesson(Mode);Delayms(1000);R_Data=0; SW_Boot();}
+  51   1          if(R_Data==253)Pause();
+  52   1      }
+C51 COMPILER V9.53.0.0   UART0                                                             07/09/2018 21:29:41 PAGE 2   
+
+  53          void main (void)
+  54          {
+  55   1          xdata uint16_t TC;
+  56   1          UART0_InitTimer3();                 
+  57   1          Set_All_GPIO_Quasi_Mode;
+  58   1          EA=1;
+  59   1          HD_Init();
+  60   1          Ext_Init();
+  61   1          HD_Number(R_Data);
+  62   1          PWM_Set(0);
+  63   1          App_Init();
+  64   1          JQ_PLay(4);Delayms(1000);JQ_PLay(0);
+  65   1          while(1)
+  66   1          {
+  67   2           
+  68   2           Menu();
+  69   2           App_Run(TC);
+  70   2          //    Send_Data_To_UART0(0xaa);
+  71   2           TC++;
+  72   2          }
+  73   1                   
+  74   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    450    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =      1       3
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+   EDATA SIZE       =   ----    ----
+   HDATA SIZE       =   ----    ----
+   XDATA CONST SIZE =   ----    ----
+   FAR CONST SIZE   =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

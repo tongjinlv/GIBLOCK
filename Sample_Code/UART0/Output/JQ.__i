@@ -1,0 +1,1 @@
+"..\..\Common\JQ.c" LARGE OMF2 OPTIMIZE (2,SPEED) BROWSE INCDIR(..\..\Include) DEFINE (FOSC_160000) DEBUG PRINT(.\LST\JQ.lst) OBJECT(.\Output\JQ.obj)

@@ -1,0 +1,130 @@
+C51 COMPILER V9.53.0.0   BITLED                                                            04/11/2018 20:51:02 PAGE 1   
+
+
+C51 COMPILER V9.53.0.0, COMPILATION OF MODULE BITLED
+OBJECT MODULE PLACED IN .\Output\BitLed.obj
+COMPILER INVOKED BY: E:\Soft\keil472a\C51\BIN\C51.EXE ..\..\Common\BitLed.c LARGE OMF2 OPTIMIZE(2,SPEED) BROWSE INCDIR(.
+                    -.\..\Include) DEFINE(FOSC_160000) DEBUG PRINT(.\LST\BitLed.lst) OBJECT(.\Output\BitLed.obj)
+
+line level    source
+
+   1          #include "include.h"
+   2          
+   3          sbit DIN=P0^6;                             //定义DIN数据端口
+   4          sbit CLK=P0^7;                             //定义CLK数据端口
+   5          unsigned char code CODE[16]={0xBB,0x81,0xEA,0xE3,0xD1,0x73,0x7B,0xA1,0xFB,0xF3,0xF9,0x5B,0x3A,0xCB,0x7A,0x
+             -78,};  //共阴数码管0~F字型码，需根据硬件接法定义              
+   6          void delay_nms(unsigned int n)
+   7          {
+   8   1          unsigned int i;
+   9   1          while(n--)
+  10   1          for(i=0;i<550;i++);
+  11   1      }
+  12          void I2CStart()
+  13          {
+  14   1          DIN=1;
+  15   1          CLK=1;
+  16   1              _nop_();
+  17   1              _nop_();
+  18   1              DIN=1; 
+  19   1              _nop_();
+  20   1              _nop_();
+  21   1              DIN=0;
+  22   1              _nop_();
+  23   1              _nop_();
+  24   1              _nop_();
+  25   1              _nop_();
+  26   1              CLK=0;
+  27   1              _nop_();
+  28   1              _nop_();
+  29   1      }
+  30          void I2CStop()
+  31          {
+  32   1              CLK=1;
+  33   1              _nop_();
+  34   1              _nop_();
+  35   1              DIN=0;
+  36   1              _nop_();
+  37   1              _nop_();
+  38   1              DIN=1;
+  39   1              _nop_();
+  40   1              _nop_();
+  41   1              CLK=0;
+  42   1              DIN=0;
+  43   1      
+  44   1      }
+  45          void I2CWritebyte(unsigned char oneByte)
+  46          {
+  47   1        unsigned char i;
+  48   1        for(i=0;i<8;i++)
+  49   1        {
+  50   2          CLK=0;
+  51   2              if(oneByte&0x01) 
+  52   2                DIN=1;
+  53   2              else 
+C51 COMPILER V9.53.0.0   BITLED                                                            04/11/2018 20:51:02 PAGE 2   
+
+  54   2                DIN=0;
+  55   2              _nop_();
+  56   2              _nop_();
+  57   2              _nop_();
+  58   2              CLK=1;
+  59   2              oneByte=oneByte>>1;
+  60   2              }
+  61   1              CLK=0;
+  62   1              _nop_();
+  63   1              _nop_();
+  64   1              _nop_();
+  65   1              _nop_();
+  66   1              DIN=0;
+  67   1              _nop_();
+  68   1              _nop_();
+  69   1      }
+  70          void disp()
+  71          {
+  72   1       unsigned char i;
+  73   1      
+  74   1       I2CStart();
+  75   1       I2CWritebyte(0x40);    //数据命令设置：普通模式，地址自动加一
+  76   1       I2CStop();
+  77   1      
+  78   1       I2CStart();
+  79   1       I2CWritebyte(0xc0);    //地址命令设置：初始地址00H
+  80   1       for(i=0;i<16;i++)      //发送16位显示数据
+  81   1       {
+  82   2         I2CWritebyte(0xff);
+  83   2       }
+  84   1       I2CStop();
+  85   1      
+  86   1       I2CStart();
+  87   1       I2CWritebyte(0x8c);    //显示控制：显示开，脉冲宽度设为11/16
+  88   1       I2CStop();
+  89   1      }
+  90          void BitLed_Init()
+  91          {
+  92   1          P06_OpenDrain_Mode;
+  93   1          P07_OpenDrain_Mode;
+  94   1      }
+  95          void BitLed()
+  96          {   
+  97   1          disp();     
+  98   1          delay_nms(1000);
+  99   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    269    ----
+   CONSTANT SIZE    =     16    ----
+   XDATA SIZE       =   ----       7
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+   EDATA SIZE       =   ----    ----
+   HDATA SIZE       =   ----    ----
+   XDATA CONST SIZE =   ----    ----
+   FAR CONST SIZE   =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

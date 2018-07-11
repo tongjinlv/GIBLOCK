@@ -1,0 +1,1 @@
+"..\..\Common\App.c" LARGE OMF2 OPTIMIZE (2,SPEED) BROWSE INCDIR(..\..\Include) DEFINE (FOSC_160000) DEBUG PRINT(.\LST\App.lst) OBJECT(.\Output\App.obj)

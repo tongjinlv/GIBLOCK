@@ -1,0 +1,140 @@
+C51 COMPILER V9.53.0.0   SEG                                                               04/10/2018 22:38:43 PAGE 1   
+
+
+C51 COMPILER V9.53.0.0, COMPILATION OF MODULE SEG
+OBJECT MODULE PLACED IN .\Output\Seg.obj
+COMPILER INVOKED BY: E:\Soft\keil472a\C51\BIN\C51.EXE ..\..\Common\Seg.c LARGE OMF2 OPTIMIZE(2,SPEED) BROWSE INCDIR(..\.
+                    -.\Include) DEFINE(FOSC_160000) DEBUG PRINT(.\LST\Seg.lst) OBJECT(.\Output\Seg.obj)
+
+line level    source
+
+   1          #include "include.h"
+   2          
+   3          sbit HD_595_CLK=P1^7;
+   4          sbit HD_595_LCK=P1^5;
+   5          sbit HD_595_DAT=P1^6;
+   6          xdata uint8_t SEGBuf[4];
+   7          code SEGNUMCode[]={0xee,0x0a,0xe9,0xab,0x0f,0xa7,0xe7,0x8a,0xef,0xaf};
+   8          
+   9          /*
+  10          ------7--------
+  11          2-------------3
+  12          ------0--------
+  13          6-------------1
+  14          ------5--------
+  15          4--------------
+  16          */
+  17          void HD_595_Write(uint8_t dat)
+  18          {
+  19   1              uint8_t i;
+  20   1              HD_595_LCK=0;
+  21   1              for(i=0;i<8;i++)
+  22   1              {
+  23   2                      if(dat&0x01)HD_595_DAT=1;else HD_595_DAT=0;
+  24   2                      HD_595_CLK=0;
+  25   2                      dat>>=1;
+  26   2                      HD_595_CLK=1;
+  27   2              }
+  28   1              HD_595_LCK=1;
+  29   1      }
+  30          
+  31          void Timer1_ISR (void) interrupt 3             
+  32          {           
+  33   1         
+  34   1        static uint8_t i;
+  35   1              P00=1;P01=1;P03=1;P04=1;
+  36   1              switch(i)
+  37   1              {
+  38   2                      case 0:HD_595_Write(SEGBuf[i]);P00=0;i=1;break;
+  39   2                      case 1:HD_595_Write(SEGBuf[i]);P01=0;i=2;break;
+  40   2                      case 2:HD_595_Write(SEGBuf[i]);P03=0;i=3;break;
+  41   2                      case 3:HD_595_Write(SEGBuf[i]);P04=0;i=0;break;
+  42   2                      default:break;
+  43   2              }
+  44   1          
+  45   1      }
+  46          void HD_Init()
+  47          {
+  48   1              TIMER1_MODE2_ENABLE; 
+  49   1              TH1=0x00;
+  50   1              TL1=0x00;
+  51   1              set_ET1; 
+  52   1              set_TR1;  
+  53   1      }
+  54          void HD_Set(uint8_t i,uint8_t dat,uint8_t Bit)
+C51 COMPILER V9.53.0.0   SEG                                                               04/10/2018 22:38:43 PAGE 2   
+
+  55          {
+  56   1              SEGBuf[i]=SEGNUMCode[dat]|Bit;
+  57   1      }
+  58          void HD_Number(uint16_t dat)
+  59          {
+  60   1          char i;
+  61   1          for(i=0;i<4;i++)
+  62   1          {
+  63   2              HD_Set(3-i,dat%10,0x00);
+  64   2              dat/=10;
+  65   2          }
+  66   1      }
+  67          void HD_Float(float dat)//1245
+  68          {
+  69   1          char i,s=0,c=0,va=4,vb=-1;
+  70   1          uint32_t temp;
+  71   1          if(dat<0)
+  72   1          {
+  73   2              va=3;vb=0;
+  74   2              dat=0-dat;
+  75   2              SEGBuf[0]=0x01;
+  76   2          }
+  77   1          temp=dat;
+  78   1          if(temp==0)c=1;else 
+  79   1          for(c=0;c<10;c++)
+  80   1          {
+  81   2              if(!temp)break;
+  82   2              temp/=10;
+  83   2          }
+  84   1          temp=1;
+  85   1          for(i=0;i<(va-c);i++)temp*=10;//(乘3次10与一次乘1000结果是不一样的)
+  86   1          dat*=temp;
+  87   1          temp=dat;
+  88   1          for(i=3;i>vb;i--)
+  89   1          {
+  90   2              if((c+vb)==(i))HD_Set(i,temp%10,0x10);
+  91   2              else HD_Set(i,temp%10,0x00);
+  92   2              temp/=10;
+  93   2          }
+  94   1      }
+  95          void HD_Lesson(uint8_t v)
+  96          {
+  97   1          SEGBuf[0]=0x64;
+  98   1          SEGBuf[1]=0x01;
+  99   1          SEGBuf[2]=SEGNUMCode[v/10];
+ 100   1          SEGBuf[3]=SEGNUMCode[v%10];
+ 101   1      }
+ 102          void HD_Clear(uint8_t f)
+ 103          {
+ 104   1          SEGBuf[0]=f;
+ 105   1          SEGBuf[1]=f;
+ 106   1          SEGBuf[2]=f;
+ 107   1          SEGBuf[3]=f;
+ 108   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =   1175    ----
+   CONSTANT SIZE    =     20    ----
+   XDATA SIZE       =      5      23
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+C51 COMPILER V9.53.0.0   SEG                                                               04/10/2018 22:38:43 PAGE 3   
+
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+   EDATA SIZE       =   ----    ----
+   HDATA SIZE       =   ----    ----
+   XDATA CONST SIZE =   ----    ----
+   FAR CONST SIZE   =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

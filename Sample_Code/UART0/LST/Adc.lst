@@ -1,0 +1,95 @@
+C51 COMPILER V9.53.0.0   ADC                                                               04/10/2018 22:38:43 PAGE 1   
+
+
+C51 COMPILER V9.53.0.0, COMPILATION OF MODULE ADC
+OBJECT MODULE PLACED IN .\Output\Adc.obj
+COMPILER INVOKED BY: E:\Soft\keil472a\C51\BIN\C51.EXE ..\..\Common\Adc.c LARGE OMF2 OPTIMIZE(2,SPEED) BROWSE INCDIR(..\.
+                    -.\Include) DEFINE(FOSC_160000) DEBUG PRINT(.\LST\Adc.lst) OBJECT(.\Output\Adc.obj)
+
+line level    source
+
+   1          #include "include.h"
+   2          
+   3          
+   4          xdata uint16_t ADC_Value;
+   5          void ADC_ISR (void) interrupt 11
+   6          {
+   7   1          clr_ADCF;                       
+   8   1          ADC_Value=ADCRH;
+   9   1          ADC_Value<<=4;
+  10   1          ADC_Value|=ADCRL;
+  11   1      }
+  12          void ADC_Init()
+  13          {
+  14   1          P05_Input_Mode;
+  15   1              Enable_ADC_AIN4;                                                                                                        
+  16   1          set_EADC;           
+  17   1          EA = 1;     
+  18   1      }
+  19          void ADC_Start()
+  20          {
+  21   1          set_ADCS;
+  22   1      }
+  23          uint16_t ADC_Read()
+  24          {
+  25   1          return ADC_Value;
+  26   1      }
+  27          void ADC_GPIO()
+  28          {
+  29   1          P05_Quasi_Mode;
+  30   1          ADCCON0&=0xF0;AINDIDS=0x00;
+  31   1          clr_EADC;
+  32   1          ADCP=1;
+  33   1      }
+  34          void ADC_PWM(uint16_t v)
+  35          {
+  36   1          P05_PushPull_Mode;
+  37   1          PWM2_P05_OUTPUT_ENABLE;
+  38   1          PWM_IMDEPENDENT_MODE;
+  39   1          PWM_CLOCK_DIV_128;
+  40   1          PWMPH = 0x00;
+  41   1          PWMPL = 0xff;
+  42   1          PWM2L = v&0xff;                                     
+  43   1          PWM2H = v>>8;                                       
+  44   1          set_LOAD;
+  45   1          set_PWMRUN;
+  46   1      }
+  47          void ADC_Beep(uint16_t v)
+  48          {
+  49   1          P05_PushPull_Mode;
+  50   1          PWM2_P05_OUTPUT_ENABLE;
+  51   1          PWM_IMDEPENDENT_MODE;
+  52   1          PWM_CLOCK_DIV_128;
+  53   1          PWMPL =v&0xff;
+  54   1          PWMPH =v>>8;
+C51 COMPILER V9.53.0.0   ADC                                                               04/10/2018 22:38:43 PAGE 2   
+
+  55   1          v/=2;
+  56   1          PWM2L = v&0xff;                                     
+  57   1          PWM2H = v>>8;                                       
+  58   1          set_LOAD;
+  59   1          set_PWMRUN;
+  60   1      }
+  61          void ADC_UPWM()
+  62          {
+  63   1          PWM2_P05_OUTPUT_DISABLE;
+  64   1          P05_Quasi_Mode;
+  65   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    434    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =      2       4
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+   EDATA SIZE       =   ----    ----
+   HDATA SIZE       =   ----    ----
+   XDATA CONST SIZE =   ----    ----
+   FAR CONST SIZE   =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

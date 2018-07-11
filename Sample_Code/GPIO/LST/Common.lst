@@ -1,0 +1,98 @@
+C51 COMPILER V9.53.0.0   COMMON                                                            04/01/2018 15:20:22 PAGE 1   
+
+
+C51 COMPILER V9.53.0.0, COMPILATION OF MODULE COMMON
+OBJECT MODULE PLACED IN .\Output\Common.obj
+COMPILER INVOKED BY: E:\Soft\keil472a\C51\BIN\C51.EXE ..\..\Common\Common.c OPTIMIZE(4,SPEED) BROWSE INCDIR(..\..\Includ
+                    -e) DEFINE(FOSC_160000) DEBUG OBJECTEXTEND PRINT(.\LST\Common.lst) OBJECT(.\Output\Common.obj)
+
+line level    source
+
+   1          #include "include.h"
+   2          
+   3          bit BIT_TMP;
+   4          
+   5          //---------------------------------------------------------------
+   6          void InitialUART0_Timer3(uint32_t u32Baudrate) //use timer3 as Baudrate generator
+   7          {
+   8   1              P06_Quasi_Mode;
+   9   1              P07_Quasi_Mode; 
+  10   1              SCON = 0x52;     //UART0 Mode1,REN=1,TI=1
+  11   1              set_SMOD;        //UART0 Double Rate Enable
+  12   1              T3CON &= 0xF8;   //T3PS2=0,T3PS1=0,T3PS0=0(Prescale=1)
+  13   1              set_BRCK;        //UART0 baud rate clock source = Timer3
+  14   1              RH3    = HIBYTE(65536 - (1000000/u32Baudrate)-1);               /*16 MHz */
+  15   1              RL3    = LOBYTE(65536 - (1000000/u32Baudrate)-1);                       /*16 MHz */
+  16   1              set_TR3; 
+  17   1              TI = 1;   
+  18   1              ES = 1; 
+  19   1              EA=1;
+  20   1      }
+  21          
+  22          uint8_t Receive_Data_From_UART0(void)
+  23          {
+  24   1          uint8_t c;
+  25   1          while (!RI);
+  26   1          c = SBUF;
+  27   1          RI = 0;
+  28   1          return (c);
+  29   1      }
+  30          
+  31          void Send_Data_To_UART0 (uint8_t c)
+  32          {
+  33   1          TI = 0;
+  34   1          SBUF = c;
+  35   1          while(TI==0);
+  36   1      }
+  37          
+  38          
+  39          void debug(const char *fmt,...)
+  40          {
+  41   1              printf(fmt);
+  42   1      }
+  43          
+  44          void SW_Boot(void)
+  45          {
+  46   1          TA = 0xAA;
+  47   1          TA = 0x55;
+  48   1          CHPCON |=0x02; 
+  49   1          TA = 0xAA;
+  50   1          TA = 0x55;
+  51   1          set_SWRST;
+  52   1      }
+  53          void serial_IT(void) interrupt 4 
+  54          {
+C51 COMPILER V9.53.0.0   COMMON                                                            04/01/2018 15:20:22 PAGE 2   
+
+  55   1              static xdata uint8_t dat=0;
+  56   1              uint8_t a;
+  57   1              if (RI) 
+  58   1              {          
+  59   2              SW_Boot();        
+  60   2                      clr_RI;                             
+  61   2                      a=SBUF;
+  62   2                      if((a==0xa4)|(a==0xae))
+  63   2                      {       
+  64   3                if(dat==0x02)SW_Boot();
+  65   3                        dat=0;
+  66   3                      }else dat+=a;
+  67   2              }
+  68   1              if(TI)
+  69   1              {
+  70   2                              clr_TI;                    
+  71   2              }
+  72   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    270    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =      1    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----      22
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =      1    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

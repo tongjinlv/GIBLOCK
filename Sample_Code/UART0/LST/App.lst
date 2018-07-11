@@ -1,0 +1,141 @@
+C51 COMPILER V9.53.0.0   APP                                                               04/10/2018 22:39:31 PAGE 1   
+
+
+C51 COMPILER V9.53.0.0, COMPILATION OF MODULE APP
+OBJECT MODULE PLACED IN .\Output\App.obj
+COMPILER INVOKED BY: E:\Soft\keil472a\C51\BIN\C51.EXE ..\..\Common\App.c LARGE OMF2 OPTIMIZE(2,SPEED) BROWSE INCDIR(..\.
+                    -.\Include) DEFINE(FOSC_160000) DEBUG PRINT(.\LST\App.lst) OBJECT(.\Output\App.obj)
+
+line level    source
+
+   1          #include "include.h"
+   2          code IR_NumberCode[]={103,207,231,133,239,199,165,189,181,173};
+   3          xdata int RecordData[15];
+   4          int MValue=0;
+   5          extern uint8_t Mode;
+   6          void App_Add()
+   7          {
+   8   1          MValue++;
+   9   1      }
+  10          void App_Sub()
+  11          {
+  12   1          MValue--;
+  13   1      }
+  14          void App_Init()
+  15          {
+  16   1          MValue=RecordData[Mode];
+  17   1          switch(Mode)
+  18   1          {
+  19   2              case 0:HD_Init();ADC_Init();UART0_InitTimer3();break;
+  20   2              case 1:ADC_Init();UART0_UInit();break;
+  21   2              case 2:ADC_Init();break;
+  22   2              case 3:HD_Init();PWM_Set(0);ADC_Init();break;
+  23   2              case 4:HD_Init();ADC_GPIO();break;
+  24   2              case 5:HD_Init();PWM_Set(0);ADC_GPIO();break;
+  25   2              case 6:ADC_UPWM();Ultrasonic_Exit();break;
+  26   2              case 7:HD_Init();UART0_UInit();ADC_UPWM();Ultrasonic_Init();break;
+  27   2              case 8:HD_Init();UART0_UInit();ADC_UPWM();Ultrasonic_Init();break;
+  28   2              case 9:ADC_UPWM();Ultrasonic_Exit();BitLed_Init();break;
+  29   2          }
+  30   1      }
+  31          int App_GetInt(int V,int Max,int Min)
+  32          {
+  33   1          char z=0;
+  34   1          char e=1;
+  35   1          char i;
+  36   1         if(R_Data!=29)return V;
+  37   1          Delayms(100);
+  38   1          R_Data=0;
+  39   1          while(1)
+  40   1          {
+  41   2              Delayms(100);
+  42   2              if(e)if(z==0)HD_Clear(0);
+  43   2              if(z>=2)HD_Float(V);
+  44   2              if(z++>5)z=0;
+  45   2              if(R_Data==29)break;
+  46   2               for(i=0;i<10;i++)
+  47   2                  {
+  48   3                      if(R_Data==IR_NumberCode[i]){if((V*10+i)<Max){V=V*10;V+=i;}else e=0; R_Data=0;HD_Float(V);
+             -}
+  49   3                  }
+  50   2              if(R_Data==157){V++;R_Data=0;}
+  51   2              if(R_Data==87){if(V>Min)V--;R_Data=0;}
+  52   2              if(R_Data==79){V=0;R_Data=0;e=1;}
+  53   2              if(R_Data==111)RecordData[Mode]=V;
+C51 COMPILER V9.53.0.0   APP                                                               04/10/2018 22:39:31 PAGE 2   
+
+  54   2          }
+  55   1          Delayms(200);
+  56   1         R_Data=0;
+  57   1          return V;
+  58   1      }
+  59          void NumMode()
+  60          {
+  61   1          char i;
+  62   1          for(i=0;i<10;i++)
+  63   1          {
+  64   2          if(R_Data==IR_NumberCode[i]){Mode=i;R_Data=0;HD_Lesson(Mode);JQ_PLay(2);App_Init();Delayms(200);JQ_PLa
+             -y(0); break;}
+  65   2          }
+  66   1          
+  67   1          
+  68   1      }
+  69          void App_Run(uint16_t t)
+  70          {
+  71   1        // Mode=4;
+  72   1          static bit a;
+  73   1          switch(Mode)
+  74   1          {
+  75   2                case 0:ADC_Start();if(t%2000==0)HD_Float(ADC_Value);NumMode(); PWM_Set((2048-(int)ADC_Value)>>4)
+             -;break;//ADC直接控制PWM
+  76   2                case 1:ADC_Start();if(t%2000==0)HD_Float(ADC_Value);if(t%ADC_Value==0)a=!a; if(a)PWM_Set(255);el
+             -se PWM_Set(-255); break;//ADC直接控制PWM
+  77   2                case 2:MValue=App_GetInt(MValue,4069,0);ADC_Start();if(t%2000==0)HD_Float(ADC_Value);if(ADC_Valu
+             -e>MValue)PWM_Set(255);else PWM_Set(-255);break;//ADC通过设置阈值控制PWM
+  78   2                case 3:MValue=App_GetInt(MValue,4069,0);ADC_Start();if(t%2000==0)HD_Float(ADC_Value);if(t%20000=
+             -=0){if(ADC_Value>MValue)JQ_PLay(4);}break;//ADC通过设置阈值控制PWM
+  79   2                case 4:if(t%2000==0){HD_Float((char)ADCP);if(ADCP)PWM_Set(255);else PWM_Set(-255);}break;
+  80   2                case 5:if(t%2000==0){HD_Float((char)ADCP);if(t%20000==0)if(!ADCP)JQ_PLay(4);}break;
+  81   2                case 6:HD_Float(MValue);MValue=App_GetInt(MValue,1000,0);if(t%500==0)ADC_Beep(MValue);break;
+  82   2                case 7:MValue=App_GetInt(MValue,4069,0);HD_Float(ADC_Value);ADC_Value=Ultrasonic_Get();if(ADC_Va
+             -lue>MValue)PWM_Set(255);else PWM_Set(-255);break;
+  83   2                case 8:MValue=App_GetInt(MValue,4069,0);HD_Float(ADC_Value);ADC_Value=Ultrasonic_Get();if(t%5==0
+             -){if(ADC_Value>MValue)JQ_PLay(4);}break;
+  84   2                case 9:BitLed();break;
+  85   2      //         case 1:HD_Float(MValue);MValue=App_GetInt(MValue,255,0);ADC_PWM(MValue);break;
+  86   2      //        case 2:HD_Float(MValue);MValue=App_GetInt(MValue,255,0);PWM_Set(MValue);break;
+  87   2      //        case 3:ADC_Start();if(t%2000==0)HD_Float(ADC_Value); PWM_Set((2048-(int)ADC_Value)>>4);break;
+  88   2      //        case 4:HD_Float(MValue);MValue=App_GetInt(MValue,4069,0);break;
+  89   2      //        case 5:MValue=App_GetInt(MValue,4069,0);ADC_Start();if(t%2000==0)HD_Float(ADC_Value);if(ADC_Valu
+             -e>MValue)PWM_Set(255);else PWM_Set(-255);break;
+  90   2      //        case 6:HD_Float((char)ADCP);if(ADCP)PWM_Set(255);else PWM_Set(-255);break;
+  91   2      //        case 7:HD_Float(ADC_Value);ADC_Value=Ultrasonic_Get();break;
+  92   2      //        case 8:HD_Float(MValue);MValue=App_GetInt(MValue,1000,0);if(t%500==0)ADC_Beep(MValue);break;
+  93   2      //        case 10:HD_Float(R_Data);break;
+  94   2      //        case 11:HD_Float(R_Data);break;
+  95   2      //        case 12:HD_Float(R_Data);break;
+  96   2      //        case 13:HD_Float(R_Data);break;
+  97   2      //        case 14:HD_Float(R_Data);break;
+  98   2      //        case 15:HD_Float(R_Data);break;
+  99   2          }
+ 100   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =   1689    ----
+   CONSTANT SIZE    =     20    ----
+   XDATA SIZE       =     32      12
+   PDATA SIZE       =   ----    ----
+C51 COMPILER V9.53.0.0   APP                                                               04/10/2018 22:39:31 PAGE 3   
+
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =      1    ----
+   EDATA SIZE       =   ----    ----
+   HDATA SIZE       =   ----    ----
+   XDATA CONST SIZE =   ----    ----
+   FAR CONST SIZE   =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

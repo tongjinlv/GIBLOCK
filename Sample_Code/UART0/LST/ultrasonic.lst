@@ -1,0 +1,93 @@
+C51 COMPILER V9.53.0.0   ULTRASONIC                                                        04/10/2018 22:38:45 PAGE 1   
+
+
+C51 COMPILER V9.53.0.0, COMPILATION OF MODULE ULTRASONIC
+OBJECT MODULE PLACED IN .\Output\ultrasonic.obj
+COMPILER INVOKED BY: E:\Soft\keil472a\C51\BIN\C51.EXE ..\..\Common\ultrasonic.c LARGE OMF2 OPTIMIZE(2,SPEED) BROWSE INCD
+                    -IR(..\..\Include) DEFINE(FOSC_160000) DEBUG PRINT(.\LST\ultrasonic.lst) OBJECT(.\Output\ultrasonic.obj)
+
+line level    source
+
+   1          #include "include.h"
+   2          sbit Trig=P0^6;
+   3          sbit Echo=P0^7;
+   4          xdata uint8_t Level_Trig;  //测量成功标志
+   5          void Ultrasonic_Init()
+   6          {
+   7   1          
+   8   1          P07_Input_Mode;
+   9   1          set_P0S_7;
+  10   1          Enable_BIT7_HighLevel_Trig;
+  11   1          P06_PushPull_Mode;
+  12   1        //  TMOD = 0XFF;
+  13   1          TIMER0_MODE1_ENABLE;
+  14   1      }
+  15          void Ultrasonic_Exit()
+  16          {
+  17   1         P06_Quasi_Mode;
+  18   1         P07_Quasi_Mode;
+  19   1      }
+  20          void PinInterrupt_ISR (void) interrupt 7
+  21          {
+  22   1          PIF = 0x00;
+  23   1          switch(Level_Trig)
+  24   1          {
+  25   2              case 0:
+  26   2              TL0=0;
+  27   2              TH0=0;
+  28   2              set_TR0;
+  29   2              Enable_BIT7_LowLevel_Trig;
+  30   2              Level_Trig=1;
+  31   2              break;
+  32   2              case 1:
+  33   2              clr_TR0; 
+  34   2              clr_EPI;
+  35   2              Level_Trig=2;
+  36   2              break;
+  37   2          }
+  38   1      }
+  39          
+  40          void delay_20us()
+  41           {  
+  42   1           uint8_t bt ;
+  43   1          for(bt=0;bt<100;bt++);
+  44   1       }
+  45          uint16_t Ultrasonic_Get()
+  46          {
+  47   1          xdata uint16_t R;
+  48   1          Trig=1;
+  49   1          delay_20us();
+  50   1          Trig=0;
+  51   1          Level_Trig=0;
+  52   1          Enable_BIT7_HighLevel_Trig;
+  53   1          set_EPI;
+  54   1          Delayms(100);
+C51 COMPILER V9.53.0.0   ULTRASONIC                                                        04/10/2018 22:38:45 PAGE 2   
+
+  55   1          if(Level_Trig==2)
+  56   1          {
+  57   2             R=TH0;
+  58   2             R<<=8;
+  59   2             R|=TL1; 
+  60   2             R/=58;
+  61   2          }
+  62   1          return R;
+  63   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    315    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =      1       3
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+   EDATA SIZE       =   ----    ----
+   HDATA SIZE       =   ----    ----
+   XDATA CONST SIZE =   ----    ----
+   FAR CONST SIZE   =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
