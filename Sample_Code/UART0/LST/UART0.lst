@@ -1,4 +1,4 @@
-C51 COMPILER V9.53.0.0   UART0                                                             07/09/2018 21:29:41 PAGE 1   
+C51 COMPILER V9.53.0.0   UART0                                                             07/12/2018 21:25:28 PAGE 1   
 
 
 C51 COMPILER V9.53.0.0, COMPILATION OF MODULE UART0
@@ -62,7 +62,7 @@ line level    source
   50   1          if(R_Data==93){HD_Lesson(Mode);Delayms(1000);R_Data=0; SW_Boot();}
   51   1          if(R_Data==253)Pause();
   52   1      }
-C51 COMPILER V9.53.0.0   UART0                                                             07/09/2018 21:29:41 PAGE 2   
+C51 COMPILER V9.53.0.0   UART0                                                             07/12/2018 21:25:28 PAGE 2   
 
   53          void main (void)
   54          {
