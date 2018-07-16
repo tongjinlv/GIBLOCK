@@ -60,14 +60,14 @@ void main (void)
     Ext_Init();
     HD_Number(R_Data);
     PWM_Set(0);
-    App_Init();
+   // App_Init();
     JQ_PLay(4);Delayms(1000);JQ_PLay(0);
     while(1)
     {
      
      Menu();
      App_Run(TC);
-    //    Send_Data_To_UART0(0xaa);
+       Send_Data_To_UART0(0xaa);
      TC++;
     }
              
