@@ -1,4 +1,4 @@
-LX51 LINKER/LOCATER V4.66.30.0                                                          07/16/2018  21:10:24  PAGE 1
+LX51 LINKER/LOCATER V4.66.30.0                                                          07/22/2018  18:38:36  PAGE 1
 
 
 LX51 LINKER/LOCATER V4.66.30.0, INVOKED BY:
@@ -67,7 +67,7 @@ INPUT MODULES INCLUDED:
          COMMENT TYPE 1: A51 / ASM51 Assembler
   E:\SOFT\KEIL472A\C51\LIB\C51L.LIB (?C?CLDPTR)
          COMMENT TYPE 1: A51 / ASM51 Assembler
-LX51 LINKER/LOCATER V4.66.30.0                                                        07/16/2018  21:10:24  PAGE 2
+LX51 LINKER/LOCATER V4.66.30.0                                                        07/22/2018  18:38:36  PAGE 2
 
 
   E:\SOFT\KEIL472A\C51\LIB\C51L.LIB (?C?CLDOPTR)
@@ -135,7 +135,7 @@ START     STOP      LENGTH    ALIGN  RELOC    MEMORY CLASS   SEGMENT NAME
 
 * * * * * * * * * * *   C O D E   M E M O R Y   * * * * * * * * * * * * *
 000000H   000002H   000003H   ---    OFFS..   CODE           ?CO?STARTUP?3
-LX51 LINKER/LOCATER V4.66.30.0                                                        07/16/2018  21:10:24  PAGE 3
+LX51 LINKER/LOCATER V4.66.30.0                                                        07/22/2018  18:38:36  PAGE 3
 
 
 000003H   000005H   000003H   BYTE   OFFS..   CODE           ?EXT?00003
@@ -203,7 +203,7 @@ START     STOP      LENGTH    ALIGN  RELOC    MEMORY CLASS   SEGMENT NAME
 * * * * * * * * * * *  X D A T A   M E M O R Y  * * * * * * * * * * * * *
 000000H   00002DH   00002EH   BYTE   UNIT     XDATA          _XDATA_GROUP_
 00002EH   00004DH   000020H   BYTE   UNIT     XDATA          ?XD?APP
-LX51 LINKER/LOCATER V4.66.30.0                                                        07/16/2018  21:10:24  PAGE 4
+LX51 LINKER/LOCATER V4.66.30.0                                                        07/22/2018  18:38:36  PAGE 4
 
 
 00004EH   000052H   000005H   BYTE   UNIT     XDATA          ?XD?SEG
@@ -271,7 +271,7 @@ _HD_SET/SEG                         001AH 001CH
 ?CO?SEG                             ----- -----
 
 _PWM_SET/PWM                        0005H 0006H
-LX51 LINKER/LOCATER V4.66.30.0                                                        07/16/2018  21:10:24  PAGE 5
+LX51 LINKER/LOCATER V4.66.30.0                                                        07/22/2018  18:38:36  PAGE 5
 
 
 
@@ -339,7 +339,7 @@ _APP_RUN/APP                        0002H 0003H
   +--> _APP_GETINT/APP
   +--> _JQ_PLAY/JQ
   +--> _ADC_BEEP/ADC
-LX51 LINKER/LOCATER V4.66.30.0                                                        07/16/2018  21:10:24  PAGE 6
+LX51 LINKER/LOCATER V4.66.30.0                                                        07/22/2018  18:38:36  PAGE 6
 
 
   +--> ULTRASONIC_GET/ULTRASONIC
@@ -407,7 +407,7 @@ TIMER1_ISR/SEG                      ----- -----
   +--> _HD_595_WRITE/SEG
 
 _HD_595_WRITE/SEG                   001EH 001FH
-LX51 LINKER/LOCATER V4.66.30.0                                                        07/16/2018  21:10:24  PAGE 7
+LX51 LINKER/LOCATER V4.66.30.0                                                        07/22/2018  18:38:36  PAGE 7
 
 
 
@@ -475,7 +475,7 @@ PUBLIC SYMBOLS OF MODULE:  .\Output\UART0 (UART0)
       0100085CH   CODE     ---       ?C?LSTKXDATA
       01000850H   CODE     ---       ?C?LSTXDATA
       0100088DH   CODE     ---       ?C?PLDIXDATA
-LX51 LINKER/LOCATER V4.66.30.0                                                        07/16/2018  21:10:24  PAGE 8
+LX51 LINKER/LOCATER V4.66.30.0                                                        07/22/2018  18:38:36  PAGE 8
 
 
       010008A4H   CODE     ---       ?C?PSTXDATA
@@ -543,7 +543,7 @@ PUBLIC SYMBOLS OF MODULE:  .\Output\UART0 (UART0)
       01001EB5H   CODE     ---       BitLed
       01001E9CH   CODE     ---       BitLed_Init
 *SFR* 000000A3H   DATA     BYTE      BODCON0
-LX51 LINKER/LOCATER V4.66.30.0                                                        07/16/2018  21:10:24  PAGE 9
+LX51 LINKER/LOCATER V4.66.30.0                                                        07/22/2018  18:38:36  PAGE 9
 
 
 *SFR* 000000ABH   DATA     BYTE      BODCON1
@@ -611,7 +611,7 @@ PUBLIC SYMBOLS OF MODULE:  .\Output\UART0 (UART0)
 *SFR* 000000BCH   DATA     BYTE      I2DAT
 *SFR* 000000BDH   DATA     BYTE      I2STAT
 *SFR* 000000BFH   DATA     BYTE      I2TOC
-LX51 LINKER/LOCATER V4.66.30.0                                                        07/16/2018  21:10:24  PAGE 10
+LX51 LINKER/LOCATER V4.66.30.0                                                        07/22/2018  18:38:36  PAGE 10
 
 
 *SFR* 000000A7H   DATA     BYTE      IAPAH
@@ -679,7 +679,7 @@ PUBLIC SYMBOLS OF MODULE:  .\Output\UART0 (UART0)
 *SFR* 000000ADH   DATA     BYTE      P3SR
 *SFR* 000000B8H.6 DATA     BIT       PADC
       01001DA7H   CODE     ---       Pause
-LX51 LINKER/LOCATER V4.66.30.0                                                        07/16/2018  21:10:24  PAGE 11
+LX51 LINKER/LOCATER V4.66.30.0                                                        07/22/2018  18:38:36  PAGE 11
 
 
 *SFR* 000000B8H.5 DATA     BIT       PBOD
@@ -747,7 +747,7 @@ PUBLIC SYMBOLS OF MODULE:  .\Output\UART0 (UART0)
 *SFR* 000000B9H   DATA     BYTE      SADEN
 *SFR* 000000BAH   DATA     BYTE      SADEN_1
 *SFR* 00000099H   DATA     BYTE      SBUF
-LX51 LINKER/LOCATER V4.66.30.0                                                        07/16/2018  21:10:24  PAGE 12
+LX51 LINKER/LOCATER V4.66.30.0                                                        07/22/2018  18:38:36  PAGE 12
 
 
 *SFR* 0000009AH   DATA     BYTE      SBUF_1
@@ -815,7 +815,7 @@ SYMBOL TABLE OF MODULE:  .\Output\UART0 (UART0)
       ====================================================
       ---         MODULE    ---      ---       UART0
       02000057H   PUBLIC    XDATA    BYTE      Mode
-LX51 LINKER/LOCATER V4.66.30.0                                                        07/16/2018  21:10:24  PAGE 13
+LX51 LINKER/LOCATER V4.66.30.0                                                        07/22/2018  18:38:36  PAGE 13
 
 
       0100183FH   PUBLIC    CODE     ---       main
@@ -883,7 +883,7 @@ SYMBOL TABLE OF MODULE:  .\Output\UART0 (UART0)
       000000CFH   SFRSYM    DATA     BYTE      ADCMPH
       00000080H   SFRSYM    DATA     BIT       P00
       00000090H   SFRSYM    DATA     BIT       P10
-LX51 LINKER/LOCATER V4.66.30.0                                                        07/16/2018  21:10:24  PAGE 14
+LX51 LINKER/LOCATER V4.66.30.0                                                        07/22/2018  18:38:36  PAGE 14
 
 
       00000080H.1 SFRSYM    DATA     BIT       P01
@@ -951,7 +951,7 @@ SYMBOL TABLE OF MODULE:  .\Output\UART0 (UART0)
       000000FAH   SFRSYM    DATA     BYTE      PDTCNT
       00000098H.7 SFRSYM    DATA     BIT       SM0
       0000008AH   SFRSYM    DATA     BYTE      TL0
-LX51 LINKER/LOCATER V4.66.30.0                                                        07/16/2018  21:10:24  PAGE 15
+LX51 LINKER/LOCATER V4.66.30.0                                                        07/22/2018  18:38:36  PAGE 15
 
 
       00000098H.6 SFRSYM    DATA     BIT       SM1
@@ -1019,7 +1019,7 @@ SYMBOL TABLE OF MODULE:  .\Output\UART0 (UART0)
       000000B9H   SFRSYM    DATA     BYTE      SADEN
       000000AFH   SFRSYM    DATA     BYTE      IAPCN
       000000D2H   SFRSYM    DATA     BYTE      PWM0H
-LX51 LINKER/LOCATER V4.66.30.0                                                        07/16/2018  21:10:24  PAGE 16
+LX51 LINKER/LOCATER V4.66.30.0                                                        07/22/2018  18:38:36  PAGE 16
 
 
       000000D6H   SFRSYM    DATA     BYTE      PNP
@@ -1087,7 +1087,7 @@ SYMBOL TABLE OF MODULE:  .\Output\UART0 (UART0)
       0100183FH   BLOCK     CODE     NEAR LAB  LVL=1
       02000000H   SYMBOL    XDATA    WORD      TC
       ---         BLOCKEND  ---      ---       LVL=1
-LX51 LINKER/LOCATER V4.66.30.0                                                        07/16/2018  21:10:24  PAGE 17
+LX51 LINKER/LOCATER V4.66.30.0                                                        07/22/2018  18:38:36  PAGE 17
 
 
       0100183FH   LINE      CODE     ---       #53
@@ -1155,7 +1155,7 @@ SYMBOL TABLE OF MODULE:  .\Output\UART0 (UART0)
       010014D9H   LINE      CODE     ---       #155
       ---         BLOCKEND  ---      ---       LVL=0
 
-LX51 LINKER/LOCATER V4.66.30.0                                                        07/16/2018  21:10:24  PAGE 18
+LX51 LINKER/LOCATER V4.66.30.0                                                        07/22/2018  18:38:36  PAGE 18
 
 
       ---         MODULE    ---      ---       COMMON
@@ -1223,7 +1223,7 @@ SYMBOL TABLE OF MODULE:  .\Output\UART0 (UART0)
       000000ADH   SFRSYM    DATA     BYTE      P3SR
       000000F8H   SFRSYM    DATA     BIT       RI_1
       000000F8H.1 SFRSYM    DATA     BIT       TI_1
-LX51 LINKER/LOCATER V4.66.30.0                                                        07/16/2018  21:10:24  PAGE 19
+LX51 LINKER/LOCATER V4.66.30.0                                                        07/22/2018  18:38:36  PAGE 19
 
 
       000000CBH   SFRSYM    DATA     BYTE      RCMP2H
@@ -1291,7 +1291,7 @@ SYMBOL TABLE OF MODULE:  .\Output\UART0 (UART0)
       00000098H.3 SFRSYM    DATA     BIT       TB8
       00000088H.2 SFRSYM    DATA     BIT       IT1
       000000CDH   SFRSYM    DATA     BYTE      TH2
-LX51 LINKER/LOCATER V4.66.30.0                                                        07/16/2018  21:10:24  PAGE 20
+LX51 LINKER/LOCATER V4.66.30.0                                                        07/22/2018  18:38:36  PAGE 20
 
 
       000000D0H   SFRSYM    DATA     BIT       P
@@ -1359,7 +1359,7 @@ SYMBOL TABLE OF MODULE:  .\Output\UART0 (UART0)
       000000F1H   SFRSYM    DATA     BYTE      CAPCON3
       000000F2H   SFRSYM    DATA     BYTE      CAPCON4
       000000D8H.7 SFRSYM    DATA     BIT       PWMRUN
-LX51 LINKER/LOCATER V4.66.30.0                                                        07/16/2018  21:10:24  PAGE 21
+LX51 LINKER/LOCATER V4.66.30.0                                                        07/22/2018  18:38:36  PAGE 21
 
 
       000000F3H   SFRSYM    DATA     BYTE      SPCR2
@@ -1427,7 +1427,7 @@ SYMBOL TABLE OF MODULE:  .\Output\UART0 (UART0)
       01001EACH   LINE      CODE     ---       #25
       01001EAFH   LINE      CODE     ---       #26
       01001EB1H   LINE      CODE     ---       #27
-LX51 LINKER/LOCATER V4.66.30.0                                                        07/16/2018  21:10:24  PAGE 22
+LX51 LINKER/LOCATER V4.66.30.0                                                        07/22/2018  18:38:36  PAGE 22
 
 
       01001EB4H   LINE      CODE     ---       #28
@@ -1495,7 +1495,7 @@ SYMBOL TABLE OF MODULE:  .\Output\UART0 (UART0)
       000000A0H   SFRSYM    DATA     BYTE      P2
       000000B0H   SFRSYM    DATA     BYTE      P3
       000000ADH   SFRSYM    DATA     BYTE      P3M2
-LX51 LINKER/LOCATER V4.66.30.0                                                        07/16/2018  21:10:24  PAGE 23
+LX51 LINKER/LOCATER V4.66.30.0                                                        07/22/2018  18:38:36  PAGE 23
 
 
       000000D0H.6 SFRSYM    DATA     BIT       AC
@@ -1563,7 +1563,7 @@ SYMBOL TABLE OF MODULE:  .\Output\UART0 (UART0)
       00000090H.3 SFRSYM    DATA     BIT       P13
       00000080H.4 SFRSYM    DATA     BIT       P04
       00000098H   SFRSYM    DATA     BYTE      SCON
-LX51 LINKER/LOCATER V4.66.30.0                                                        07/16/2018  21:10:24  PAGE 24
+LX51 LINKER/LOCATER V4.66.30.0                                                        07/22/2018  18:38:36  PAGE 24
 
 
       00000090H.4 SFRSYM    DATA     BIT       P14
@@ -1631,7 +1631,7 @@ SYMBOL TABLE OF MODULE:  .\Output\UART0 (UART0)
       000000B5H   SFRSYM    DATA     BYTE      P2S
       000000D0H.4 SFRSYM    DATA     BIT       RS1
       00000088H.4 SFRSYM    DATA     BIT       TR0
-LX51 LINKER/LOCATER V4.66.30.0                                                        07/16/2018  21:10:24  PAGE 25
+LX51 LINKER/LOCATER V4.66.30.0                                                        07/22/2018  18:38:36  PAGE 25
 
 
       000000BEH   SFRSYM    DATA     BYTE      I2CLK
@@ -1699,7 +1699,7 @@ SYMBOL TABLE OF MODULE:  .\Output\UART0 (UART0)
       000000DDH   SFRSYM    DATA     BYTE      PWM3L
       00000086H   SFRSYM    DATA     BYTE      RWK
       000000D0H.5 SFRSYM    DATA     BIT       F0
-LX51 LINKER/LOCATER V4.66.30.0                                                        07/16/2018  21:10:24  PAGE 26
+LX51 LINKER/LOCATER V4.66.30.0                                                        07/22/2018  18:38:36  PAGE 26
 
 
       000000CCH   SFRSYM    DATA     BYTE      PWM4L
@@ -1767,7 +1767,7 @@ SYMBOL TABLE OF MODULE:  .\Output\UART0 (UART0)
       000000D0H.6 SFRSYM    DATA     BIT       AC
       0000008FH   SFRSYM    DATA     BYTE      WKCON
       0000009CH   SFRSYM    DATA     BYTE      EIE1
-LX51 LINKER/LOCATER V4.66.30.0                                                        07/16/2018  21:10:24  PAGE 27
+LX51 LINKER/LOCATER V4.66.30.0                                                        07/22/2018  18:38:36  PAGE 27
 
 
       000000A8H.7 SFRSYM    DATA     BIT       EA
@@ -1835,7 +1835,7 @@ SYMBOL TABLE OF MODULE:  .\Output\UART0 (UART0)
       00000090H.4 SFRSYM    DATA     BIT       P14
       00000080H.5 SFRSYM    DATA     BIT       P05
       00000089H   SFRSYM    DATA     BYTE      TMOD
-LX51 LINKER/LOCATER V4.66.30.0                                                        07/16/2018  21:10:24  PAGE 28
+LX51 LINKER/LOCATER V4.66.30.0                                                        07/22/2018  18:38:36  PAGE 28
 
 
       00000088H   SFRSYM    DATA     BYTE      TCON
@@ -1903,7 +1903,7 @@ SYMBOL TABLE OF MODULE:  .\Output\UART0 (UART0)
       000000B5H   SFRSYM    DATA     BYTE      P2S
       000000D0H.4 SFRSYM    DATA     BIT       RS1
       00000088H.4 SFRSYM    DATA     BIT       TR0
-LX51 LINKER/LOCATER V4.66.30.0                                                        07/16/2018  21:10:24  PAGE 29
+LX51 LINKER/LOCATER V4.66.30.0                                                        07/22/2018  18:38:36  PAGE 29
 
 
       000000BEH   SFRSYM    DATA     BYTE      I2CLK
@@ -1971,7 +1971,7 @@ SYMBOL TABLE OF MODULE:  .\Output\UART0 (UART0)
       000000DDH   SFRSYM    DATA     BYTE      PWM3L
       00000086H   SFRSYM    DATA     BYTE      RWK
       000000D0H.5 SFRSYM    DATA     BIT       F0
-LX51 LINKER/LOCATER V4.66.30.0                                                        07/16/2018  21:10:24  PAGE 30
+LX51 LINKER/LOCATER V4.66.30.0                                                        07/22/2018  18:38:36  PAGE 30
 
 
       000000CCH   SFRSYM    DATA     BYTE      PWM4L
@@ -2039,7 +2039,7 @@ SYMBOL TABLE OF MODULE:  .\Output\UART0 (UART0)
 
       01001C88H   BLOCK     CODE     ---       LVL=0
       0200001AH   SYMBOL    XDATA    BYTE      i
-LX51 LINKER/LOCATER V4.66.30.0                                                        07/16/2018  21:10:24  PAGE 31
+LX51 LINKER/LOCATER V4.66.30.0                                                        07/22/2018  18:38:36  PAGE 31
 
 
       0200001BH   SYMBOL    XDATA    BYTE      dat
@@ -2107,7 +2107,7 @@ SYMBOL TABLE OF MODULE:  .\Output\UART0 (UART0)
       01001A26H   BLOCK     CODE     ---       LVL=0
       02000005H   SYMBOL    XDATA    BYTE      v
       01001A26H   LINE      CODE     ---       #95
-LX51 LINKER/LOCATER V4.66.30.0                                                        07/16/2018  21:10:24  PAGE 32
+LX51 LINKER/LOCATER V4.66.30.0                                                        07/22/2018  18:38:36  PAGE 32
 
 
       01001A2BH   LINE      CODE     ---       #96
@@ -2175,7 +2175,7 @@ SYMBOL TABLE OF MODULE:  .\Output\UART0 (UART0)
       000000D0H.7 SFRSYM    DATA     BIT       CY
       000000C0H.3 SFRSYM    DATA     BIT       SI
       000000B0H   SFRSYM    DATA     BIT       INT0
-LX51 LINKER/LOCATER V4.66.30.0                                                        07/16/2018  21:10:24  PAGE 33
+LX51 LINKER/LOCATER V4.66.30.0                                                        07/22/2018  18:38:36  PAGE 33
 
 
       00000098H.1 SFRSYM    DATA     BIT       TI
@@ -2243,7 +2243,7 @@ SYMBOL TABLE OF MODULE:  .\Output\UART0 (UART0)
       000000F4H   SFRSYM    DATA     BYTE      SPSR
       000000A4H   SFRSYM    DATA     BYTE      IAPTRG
       000000A8H.3 SFRSYM    DATA     BIT       ET1
-LX51 LINKER/LOCATER V4.66.30.0                                                        07/16/2018  21:10:24  PAGE 34
+LX51 LINKER/LOCATER V4.66.30.0                                                        07/22/2018  18:38:36  PAGE 34
 
 
       00000088H.5 SFRSYM    DATA     BIT       TF0
@@ -2311,7 +2311,7 @@ SYMBOL TABLE OF MODULE:  .\Output\UART0 (UART0)
       000000C3H   SFRSYM    DATA     BYTE      ADCRH
       000000A7H   SFRSYM    DATA     BYTE      IAPAH
       00000098H.4 SFRSYM    DATA     BIT       REN
-LX51 LINKER/LOCATER V4.66.30.0                                                        07/16/2018  21:10:24  PAGE 35
+LX51 LINKER/LOCATER V4.66.30.0                                                        07/22/2018  18:38:36  PAGE 35
 
 
       000000AEH   SFRSYM    DATA     BYTE      IAPFD
@@ -2379,7 +2379,7 @@ SYMBOL TABLE OF MODULE:  .\Output\UART0 (UART0)
       01001D5CH   LINE      CODE     ---       #15
       01001D5EH   LINE      CODE     ---       #16
       01001D60H   LINE      CODE     ---       #17
-LX51 LINKER/LOCATER V4.66.30.0                                                        07/16/2018  21:10:24  PAGE 36
+LX51 LINKER/LOCATER V4.66.30.0                                                        07/22/2018  18:38:36  PAGE 36
 
 
       01001D71H   LINE      CODE     ---       #18
@@ -2447,7 +2447,7 @@ SYMBOL TABLE OF MODULE:  .\Output\UART0 (UART0)
       00000080H.5 SFRSYM    DATA     BIT       ADCP
       000000B8H.6 SFRSYM    DATA     BIT       PADC
       000000B8H   SFRSYM    DATA     BYTE      IP
-LX51 LINKER/LOCATER V4.66.30.0                                                        07/16/2018  21:10:24  PAGE 37
+LX51 LINKER/LOCATER V4.66.30.0                                                        07/22/2018  18:38:36  PAGE 37
 
 
       000000A8H.5 SFRSYM    DATA     BIT       EBOD
@@ -2515,7 +2515,7 @@ SYMBOL TABLE OF MODULE:  .\Output\UART0 (UART0)
       000000F0H   SFRSYM    DATA     BYTE      B
       000000EDH   SFRSYM    DATA     BYTE      C2L
       0000009AH   SFRSYM    DATA     BYTE      SBUF_1
-LX51 LINKER/LOCATER V4.66.30.0                                                        07/16/2018  21:10:24  PAGE 38
+LX51 LINKER/LOCATER V4.66.30.0                                                        07/22/2018  18:38:36  PAGE 38
 
 
       000000A5H   SFRSYM    DATA     BYTE      IAPUEN
@@ -2583,7 +2583,7 @@ SYMBOL TABLE OF MODULE:  .\Output\UART0 (UART0)
       000000B7H   SFRSYM    DATA     BYTE      IPH
       000000F8H.6 SFRSYM    DATA     BIT       SM1_1
       00000090H.3 SFRSYM    DATA     BIT       SCL
-LX51 LINKER/LOCATER V4.66.30.0                                                        07/16/2018  21:10:24  PAGE 39
+LX51 LINKER/LOCATER V4.66.30.0                                                        07/22/2018  18:38:36  PAGE 39
 
 
       000000BFH   SFRSYM    DATA     BYTE      I2TOC
@@ -2651,7 +2651,7 @@ SYMBOL TABLE OF MODULE:  .\Output\UART0 (UART0)
       01001812H   LINE      CODE     ---       #10
       0100182CH   LINE      CODE     ---       #11
       ---         BLOCKEND  ---      ---       LVL=0
-LX51 LINKER/LOCATER V4.66.30.0                                                        07/16/2018  21:10:24  PAGE 40
+LX51 LINKER/LOCATER V4.66.30.0                                                        07/22/2018  18:38:36  PAGE 40
 
 
 
@@ -2719,7 +2719,7 @@ SYMBOL TABLE OF MODULE:  .\Output\UART0 (UART0)
       000000B1H   SFRSYM    DATA     BYTE      P0M1
       000000B3H   SFRSYM    DATA     BYTE      P1M1
       000000B2H   SFRSYM    DATA     BYTE      P0M2
-LX51 LINKER/LOCATER V4.66.30.0                                                        07/16/2018  21:10:24  PAGE 41
+LX51 LINKER/LOCATER V4.66.30.0                                                        07/22/2018  18:38:36  PAGE 41
 
 
       00000080H   SFRSYM    DATA     BYTE      P0
@@ -2787,7 +2787,7 @@ SYMBOL TABLE OF MODULE:  .\Output\UART0 (UART0)
       000000A0H   SFRSYM    DATA     BIT       P20
       00000090H.1 SFRSYM    DATA     BIT       P11
       00000080H.2 SFRSYM    DATA     BIT       P02
-LX51 LINKER/LOCATER V4.66.30.0                                                        07/16/2018  21:10:24  PAGE 42
+LX51 LINKER/LOCATER V4.66.30.0                                                        07/22/2018  18:38:36  PAGE 42
 
 
       000000CAH   SFRSYM    DATA     BYTE      RCMP2L
@@ -2855,7 +2855,7 @@ SYMBOL TABLE OF MODULE:  .\Output\UART0 (UART0)
       00000098H.5 SFRSYM    DATA     BIT       SM2
       000000CCH   SFRSYM    DATA     BYTE      TL2
       000000B1H   SFRSYM    DATA     BYTE      P0S
-LX51 LINKER/LOCATER V4.66.30.0                                                        07/16/2018  21:10:24  PAGE 43
+LX51 LINKER/LOCATER V4.66.30.0                                                        07/22/2018  18:38:36  PAGE 43
 
 
       0000009BH   SFRSYM    DATA     BYTE      EIE
@@ -2923,7 +2923,7 @@ SYMBOL TABLE OF MODULE:  .\Output\UART0 (UART0)
       0000008EH   SFRSYM    DATA     BYTE      CKCON
       000000D5H   SFRSYM    DATA     BYTE      PWM3H
       000000DAH   SFRSYM    DATA     BYTE      PWM0L
-LX51 LINKER/LOCATER V4.66.30.0                                                        07/16/2018  21:10:24  PAGE 44
+LX51 LINKER/LOCATER V4.66.30.0                                                        07/22/2018  18:38:36  PAGE 44
 
 
       000000C4H   SFRSYM    DATA     BYTE      PWM4H
@@ -2991,7 +2991,7 @@ SYMBOL TABLE OF MODULE:  .\Output\UART0 (UART0)
       010010C8H   LINE      CODE     ---       #27
       010010EAH   LINE      CODE     ---       #28
       010010FDH   LINE      CODE     ---       #29
-LX51 LINKER/LOCATER V4.66.30.0                                                        07/16/2018  21:10:24  PAGE 45
+LX51 LINKER/LOCATER V4.66.30.0                                                        07/22/2018  18:38:36  PAGE 45
 
 
       010010FDH   LINE      CODE     ---       #30
@@ -3059,7 +3059,7 @@ SYMBOL TABLE OF MODULE:  .\Output\UART0 (UART0)
       000000E8H.3 SFRSYM    DATA     BIT       ADCHS3
       000000A8H.4 SFRSYM    DATA     BIT       ES
       000000C1H   SFRSYM    DATA     BYTE      I2ADDR
-LX51 LINKER/LOCATER V4.66.30.0                                                        07/16/2018  21:10:24  PAGE 46
+LX51 LINKER/LOCATER V4.66.30.0                                                        07/22/2018  18:38:36  PAGE 46
 
 
       00000080H.5 SFRSYM    DATA     BIT       ADCP
@@ -3127,7 +3127,7 @@ SYMBOL TABLE OF MODULE:  .\Output\UART0 (UART0)
       00000088H.3 SFRSYM    DATA     BIT       IE1
       000000E4H   SFRSYM    DATA     BYTE      C0L
       00000091H   SFRSYM    DATA     BYTE      SFRS
-LX51 LINKER/LOCATER V4.66.30.0                                                        07/16/2018  21:10:24  PAGE 47
+LX51 LINKER/LOCATER V4.66.30.0                                                        07/22/2018  18:38:36  PAGE 47
 
 
       000000E6H   SFRSYM    DATA     BYTE      C1L
@@ -3195,7 +3195,7 @@ SYMBOL TABLE OF MODULE:  .\Output\UART0 (UART0)
       000000F8H.3 SFRSYM    DATA     BIT       TB8_1
       000000ECH   SFRSYM    DATA     BYTE      PIF
       00000082H   SFRSYM    DATA     BYTE      DPL
-LX51 LINKER/LOCATER V4.66.30.0                                                        07/16/2018  21:10:24  PAGE 48
+LX51 LINKER/LOCATER V4.66.30.0                                                        07/22/2018  18:38:36  PAGE 48
 
 
       000000F8H.7 SFRSYM    DATA     BIT       SM0_1
@@ -3263,7 +3263,7 @@ SYMBOL TABLE OF MODULE:  .\Output\UART0 (UART0)
       010018A6H   BLOCK     CODE     ---       LVL=0
       02000005H   SYMBOL    XDATA    INT       v
       010018A6H   LINE      CODE     ---       #7
-LX51 LINKER/LOCATER V4.66.30.0                                                        07/16/2018  21:10:24  PAGE 49
+LX51 LINKER/LOCATER V4.66.30.0                                                        07/22/2018  18:38:36  PAGE 49
 
 
       010018AEH   LINE      CODE     ---       #8
@@ -3331,7 +3331,7 @@ SYMBOL TABLE OF MODULE:  .\Output\UART0 (UART0)
       000000C0H.3 SFRSYM    DATA     BIT       SI
       000000B0H   SFRSYM    DATA     BIT       INT0
       00000098H.1 SFRSYM    DATA     BIT       TI
-LX51 LINKER/LOCATER V4.66.30.0                                                        07/16/2018  21:10:24  PAGE 50
+LX51 LINKER/LOCATER V4.66.30.0                                                        07/22/2018  18:38:36  PAGE 50
 
 
       000000D8H.6 SFRSYM    DATA     BIT       LOAD
@@ -3399,7 +3399,7 @@ SYMBOL TABLE OF MODULE:  .\Output\UART0 (UART0)
       000000A4H   SFRSYM    DATA     BYTE      IAPTRG
       000000A8H.3 SFRSYM    DATA     BIT       ET1
       00000088H.5 SFRSYM    DATA     BIT       TF0
-LX51 LINKER/LOCATER V4.66.30.0                                                        07/16/2018  21:10:24  PAGE 51
+LX51 LINKER/LOCATER V4.66.30.0                                                        07/22/2018  18:38:36  PAGE 51
 
 
       00000088H.7 SFRSYM    DATA     BIT       TF1
@@ -3467,7 +3467,7 @@ SYMBOL TABLE OF MODULE:  .\Output\UART0 (UART0)
       000000AEH   SFRSYM    DATA     BYTE      IAPFD
       00000092H   SFRSYM    DATA     BYTE      CAPCON0
       000000C0H   SFRSYM    DATA     BIT       I2CPX
-LX51 LINKER/LOCATER V4.66.30.0                                                        07/16/2018  21:10:24  PAGE 52
+LX51 LINKER/LOCATER V4.66.30.0                                                        07/22/2018  18:38:36  PAGE 52
 
 
       000000C9H   SFRSYM    DATA     BYTE      T2MOD
@@ -3535,7 +3535,7 @@ SYMBOL TABLE OF MODULE:  .\Output\UART0 (UART0)
       01001B0FH   LINE      CODE     ---       #18
       01001B16H   LINE      CODE     ---       #19
       01001B18H   LINE      CODE     ---       #20
-LX51 LINKER/LOCATER V4.66.30.0                                                        07/16/2018  21:10:24  PAGE 53
+LX51 LINKER/LOCATER V4.66.30.0                                                        07/22/2018  18:38:36  PAGE 53
 
 
       01001B1FH   LINE      CODE     ---       #21
@@ -3603,7 +3603,7 @@ SYMBOL TABLE OF MODULE:  .\Output\UART0 (UART0)
       000000B7H   SFRSYM    DATA     BYTE      PWMINTC
       000000B8H.5 SFRSYM    DATA     BIT       PBOD
       000000B2H   SFRSYM    DATA     BYTE      P0SR
-LX51 LINKER/LOCATER V4.66.30.0                                                        07/16/2018  21:10:24  PAGE 54
+LX51 LINKER/LOCATER V4.66.30.0                                                        07/22/2018  18:38:36  PAGE 54
 
 
       000000F7H   SFRSYM    DATA     BYTE      EIPH
@@ -3671,7 +3671,7 @@ SYMBOL TABLE OF MODULE:  .\Output\UART0 (UART0)
       000000A8H   SFRSYM    DATA     BIT       EX0
       00000088H   SFRSYM    DATA     BIT       IT0
       000000C6H   SFRSYM    DATA     BYTE      RH3
-LX51 LINKER/LOCATER V4.66.30.0                                                        07/16/2018  21:10:24  PAGE 55
+LX51 LINKER/LOCATER V4.66.30.0                                                        07/22/2018  18:38:36  PAGE 55
 
 
       0000008DH   SFRSYM    DATA     BYTE      TH1
@@ -3739,7 +3739,7 @@ SYMBOL TABLE OF MODULE:  .\Output\UART0 (UART0)
       000000C0H.5 SFRSYM    DATA     BIT       STA
       000000C4H   SFRSYM    DATA     BYTE      T3CON
       000000ABH   SFRSYM    DATA     BYTE      BODCON1
-LX51 LINKER/LOCATER V4.66.30.0                                                        07/16/2018  21:10:24  PAGE 56
+LX51 LINKER/LOCATER V4.66.30.0                                                        07/22/2018  18:38:36  PAGE 56
 
 
       000000A6H   SFRSYM    DATA     BYTE      IAPAL
@@ -3807,7 +3807,7 @@ SYMBOL TABLE OF MODULE:  .\Output\UART0 (UART0)
       02000004H   SYMBOL    XDATA    INT       V
       02000006H   SYMBOL    XDATA    INT       Max
       02000008H   SYMBOL    XDATA    INT       Min
-LX51 LINKER/LOCATER V4.66.30.0                                                        07/16/2018  21:10:24  PAGE 57
+LX51 LINKER/LOCATER V4.66.30.0                                                        07/22/2018  18:38:36  PAGE 57
 
 
       01000E8EH   BLOCK     CODE     NEAR LAB  LVL=1
@@ -3875,7 +3875,7 @@ SYMBOL TABLE OF MODULE:  .\Output\UART0 (UART0)
       01000AF9H   LINE      CODE     ---       #81
       01000B45H   LINE      CODE     ---       #82
       01000BA1H   LINE      CODE     ---       #83
-LX51 LINKER/LOCATER V4.66.30.0                                                        07/16/2018  21:10:24  PAGE 58
+LX51 LINKER/LOCATER V4.66.30.0                                                        07/22/2018  18:38:36  PAGE 58
 
 
       01000C08H   LINE      CODE     ---       #84
@@ -3943,7 +3943,7 @@ SYMBOL TABLE OF MODULE:  .\Output\UART0 (UART0)
       00000081H   SFRSYM    DATA     BYTE      SP
       000000D0H.2 SFRSYM    DATA     BIT       OV
       000000B7H   SFRSYM    DATA     BYTE      PWMINTC
-LX51 LINKER/LOCATER V4.66.30.0                                                        07/16/2018  21:10:24  PAGE 59
+LX51 LINKER/LOCATER V4.66.30.0                                                        07/22/2018  18:38:36  PAGE 59
 
 
       000000B8H.5 SFRSYM    DATA     BIT       PBOD
@@ -4011,7 +4011,7 @@ SYMBOL TABLE OF MODULE:  .\Output\UART0 (UART0)
       000000D7H   SFRSYM    DATA     BYTE      FBD
       0000008CH   SFRSYM    DATA     BYTE      TH0
       000000A8H   SFRSYM    DATA     BIT       EX0
-LX51 LINKER/LOCATER V4.66.30.0                                                        07/16/2018  21:10:24  PAGE 60
+LX51 LINKER/LOCATER V4.66.30.0                                                        07/22/2018  18:38:36  PAGE 60
 
 
       00000088H   SFRSYM    DATA     BIT       IT0
@@ -4079,7 +4079,7 @@ SYMBOL TABLE OF MODULE:  .\Output\UART0 (UART0)
       000000A3H   SFRSYM    DATA     BYTE      BODCON0
       00000093H   SFRSYM    DATA     BYTE      CAPCON1
       000000C0H.5 SFRSYM    DATA     BIT       STA
-LX51 LINKER/LOCATER V4.66.30.0                                                        07/16/2018  21:10:24  PAGE 61
+LX51 LINKER/LOCATER V4.66.30.0                                                        07/22/2018  18:38:36  PAGE 61
 
 
       000000C4H   SFRSYM    DATA     BYTE      T3CON
@@ -4147,7 +4147,7 @@ SYMBOL TABLE OF MODULE:  .\Output\UART0 (UART0)
       01001A7FH   BLOCK     CODE     ---       LVL=0
       01001A7FH   LINE      CODE     ---       #20
       01001A8EH   LINE      CODE     ---       #22
-LX51 LINKER/LOCATER V4.66.30.0                                                        07/16/2018  21:10:24  PAGE 62
+LX51 LINKER/LOCATER V4.66.30.0                                                        07/22/2018  18:38:36  PAGE 62
 
 
       01001A91H   LINE      CODE     ---       #23
@@ -4215,7 +4215,7 @@ SYMBOL TABLE OF MODULE:  .\Output\UART0 (UART0)
       000000B3H   SFRSYM    DATA     BYTE      P1M1
       000000B2H   SFRSYM    DATA     BYTE      P0M2
       00000080H   SFRSYM    DATA     BYTE      P0
-LX51 LINKER/LOCATER V4.66.30.0                                                        07/16/2018  21:10:24  PAGE 63
+LX51 LINKER/LOCATER V4.66.30.0                                                        07/22/2018  18:38:36  PAGE 63
 
 
       000000BBH   SFRSYM    DATA     BYTE      SADDR_1
@@ -4283,7 +4283,7 @@ SYMBOL TABLE OF MODULE:  .\Output\UART0 (UART0)
       00000090H.1 SFRSYM    DATA     BIT       P11
       00000080H.2 SFRSYM    DATA     BIT       P02
       000000CAH   SFRSYM    DATA     BYTE      RCMP2L
-LX51 LINKER/LOCATER V4.66.30.0                                                        07/16/2018  21:10:24  PAGE 64
+LX51 LINKER/LOCATER V4.66.30.0                                                        07/22/2018  18:38:36  PAGE 64
 
 
       000000B0H   SFRSYM    DATA     BIT       P30
@@ -4351,7 +4351,7 @@ SYMBOL TABLE OF MODULE:  .\Output\UART0 (UART0)
       000000CCH   SFRSYM    DATA     BYTE      TL2
       000000B1H   SFRSYM    DATA     BYTE      P0S
       0000009BH   SFRSYM    DATA     BYTE      EIE
-LX51 LINKER/LOCATER V4.66.30.0                                                        07/16/2018  21:10:24  PAGE 65
+LX51 LINKER/LOCATER V4.66.30.0                                                        07/22/2018  18:38:36  PAGE 65
 
 
       000000B8H.1 SFRSYM    DATA     BIT       PT0
@@ -4419,7 +4419,7 @@ SYMBOL TABLE OF MODULE:  .\Output\UART0 (UART0)
       000000A9H   SFRSYM    DATA     BYTE      SADDR
       0000008EH   SFRSYM    DATA     BYTE      CKCON
       000000D5H   SFRSYM    DATA     BYTE      PWM3H
-LX51 LINKER/LOCATER V4.66.30.0                                                        07/16/2018  21:10:24  PAGE 66
+LX51 LINKER/LOCATER V4.66.30.0                                                        07/22/2018  18:38:36  PAGE 66
 
 
       000000DAH   SFRSYM    DATA     BYTE      PWM0L
@@ -4487,7 +4487,7 @@ SYMBOL TABLE OF MODULE:  .\Output\UART0 (UART0)
       01001E6EH   LINE      CODE     ---       #32
       01001E70H   LINE      CODE     ---       #33
       01001E71H   LINE      CODE     ---       #34
-LX51 LINKER/LOCATER V4.66.30.0                                                        07/16/2018  21:10:24  PAGE 67
+LX51 LINKER/LOCATER V4.66.30.0                                                        07/22/2018  18:38:36  PAGE 67
 
 
       01001E72H   LINE      CODE     ---       #35
@@ -4555,7 +4555,7 @@ SYMBOL TABLE OF MODULE:  .\Output\UART0 (UART0)
 
       01001E9CH   BLOCK     CODE     ---       LVL=0
       01001E9CH   LINE      CODE     ---       #90
-LX51 LINKER/LOCATER V4.66.30.0                                                        07/16/2018  21:10:24  PAGE 68
+LX51 LINKER/LOCATER V4.66.30.0                                                        07/22/2018  18:38:36  PAGE 68
 
 
       01001E9CH   LINE      CODE     ---       #91
@@ -4623,7 +4623,7 @@ SYMBOL TABLE OF MODULE:  .\Output\UART0 (UART0)
       010005F7H   PUBLIC    CODE     ---       ?C?CLDPTR
 
       ---         MODULE    ---      ---       ?C?CLDOPTR
-LX51 LINKER/LOCATER V4.66.30.0                                                        07/16/2018  21:10:24  PAGE 69
+LX51 LINKER/LOCATER V4.66.30.0                                                        07/22/2018  18:38:36  PAGE 69
 
 
       01000610H   PUBLIC    CODE     ---       ?C?CLDOPTR

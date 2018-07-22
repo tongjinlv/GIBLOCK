@@ -1,0 +1,1609 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+K:\2018\Prj\BlockSoft\GIBLOCK\Sample_Code\UART0\UART0.uvproj
+Project File Date:  07/10/2018
+
+<h2>Output:</h2>
+Build target 'micor-null'
+linking...
+Program Size: data=9.2 xdata=90 const=40 code=7863
+creating hex file from ".\Output\UART0"...
+User command #1: .\output\hex2bin.exe .\output\UART0.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  00001EE7
+Starting address: 00000000
+Max Length:       7912
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 00001EE7
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM5 .\output\UART0.bin
+PortName[COM5]
+BaudRate[115200]
+FileSize[7912]
+.
+.
+Connect OK
+.Erase Done
+--------------------------------------------------------100%
+Update Done
+".\Output\UART0" - 0 Error(s), 0 Warning(s).
+Build target 'micor-null'
+linking...
+Program Size: data=9.2 xdata=90 const=40 code=7863
+creating hex file from ".\Output\UART0"...
+User command #1: .\output\hex2bin.exe .\output\UART0.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  00001EE7
+Starting address: 00000000
+Max Length:       7912
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 00001EE7
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM5 .\output\UART0.bin
+PortName[COM5]
+BaudRate[115200]
+FileSize[7912]
+.....Connect Fail
+".\Output\UART0" - 0 Error(s), 0 Warning(s).
+Build target 'micor-null'
+linking...
+Program Size: data=9.2 xdata=90 const=40 code=7863
+creating hex file from ".\Output\UART0"...
+User command #1: .\output\hex2bin.exe .\output\UART0.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  00001EE7
+Starting address: 00000000
+Max Length:       7912
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 00001EE7
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM5 .\output\UART0.bin
+PortName[COM5]
+BaudRate[115200]
+FileSize[7912]
+Connect OK
+.Erase Done
+--------------------------------------------------------100%
+Update Done
+".\Output\UART0" - 0 Error(s), 0 Warning(s).
+Build target 'micor-null'
+linking...
+Program Size: data=9.2 xdata=90 const=40 code=7863
+creating hex file from ".\Output\UART0"...
+User command #1: .\output\hex2bin.exe .\output\UART0.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  00001EE7
+Starting address: 00000000
+Max Length:       7912
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 00001EE7
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM5 .\output\UART0.bin
+PortName[COM5]
+BaudRate[115200]
+FileSize[7912]
+..........未将对象引用设置到对象的实例。
+".\Output\UART0" - 0 Error(s), 0 Warning(s).
+Build target 'micor-null'
+linking...
+Program Size: data=9.2 xdata=90 const=40 code=7863
+creating hex file from ".\Output\UART0"...
+User command #1: .\output\hex2bin.exe .\output\UART0.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  00001EE7
+Starting address: 00000000
+Max Length:       7912
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 00001EE7
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM4 .\output\UART0.bin
+PortName[COM4]
+BaudRate[115200]
+FileSize[7912]
+.
+.
+Connect OK
+.Erase Done
+--------------------------------------------------------100%
+Update Done
+".\Output\UART0" - 0 Error(s), 0 Warning(s).
+Build target 'micor-null'
+compiling UART0.c...
+linking...
+Program Size: data=9.2 xdata=90 const=40 code=7868
+creating hex file from ".\Output\UART0"...
+User command #1: .\output\hex2bin.exe .\output\UART0.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  00001EEC
+Starting address: 00000000
+Max Length:       7917
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 00001EEC
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM4 .\output\UART0.bin
+PortName[COM4]
+BaudRate[115200]
+FileSize[7917]
+Connect OK
+.Erase Done
+--------------------------------------------------------100%
+Update Done
+".\Output\UART0" - 0 Error(s), 0 Warning(s).
+Build target 'micor-null'
+linking...
+Program Size: data=9.2 xdata=90 const=40 code=7868
+creating hex file from ".\Output\UART0"...
+User command #1: .\output\hex2bin.exe .\output\UART0.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  00001EEC
+Starting address: 00000000
+Max Length:       7917
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 00001EEC
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM4 .\output\UART0.bin
+PortName[COM4]
+BaudRate[115200]
+FileSize[7917]
+.
+.
+.
+Connect OK
+.Erase Done
+--------------------------------------------------------100%
+Update Done
+".\Output\UART0" - 0 Error(s), 0 Warning(s).
+Build target 'micor-null'
+compiling UART0.c...
+linking...
+Program Size: data=9.2 xdata=90 const=40 code=7874
+creating hex file from ".\Output\UART0"...
+User command #1: .\output\hex2bin.exe .\output\UART0.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  00001EF2
+Starting address: 00000000
+Max Length:       7923
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 00001EF2
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM4 .\output\UART0.bin
+PortName[COM4]
+BaudRate[115200]
+FileSize[7923]
+.
+.
+Connect OK
+.Erase Done
+--------------------------------------------------------100%
+Update Done
+".\Output\UART0" - 0 Error(s), 0 Warning(s).
+Build target 'micor-null'
+linking...
+Program Size: data=9.2 xdata=90 const=40 code=7874
+creating hex file from ".\Output\UART0"...
+User command #1: .\output\hex2bin.exe .\output\UART0.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  00001EF2
+Starting address: 00000000
+Max Length:       7923
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 00001EF2
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM4 .\output\UART0.bin
+PortName[COM4]
+BaudRate[115200]
+FileSize[7923]
+.
+.
+.
+Connect OK
+.Erase Done
+--------------------------------------..........Update Fail
+".\Output\UART0" - 0 Error(s), 0 Warning(s).
+Build target 'micor-null'
+linking...
+Program Size: data=9.2 xdata=90 const=40 code=7874
+creating hex file from ".\Output\UART0"...
+User command #1: .\output\hex2bin.exe .\output\UART0.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  00001EF2
+Starting address: 00000000
+Max Length:       7923
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 00001EF2
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM4 .\output\UART0.bin
+PortName[COM4]
+BaudRate[115200]
+FileSize[7923]
+.
+.
+Connect OK
+.Erase Done
+--------------------------------------------------------100%
+Update Done
+".\Output\UART0" - 0 Error(s), 0 Warning(s).
+Build target 'micor-null'
+linking...
+Program Size: data=9.2 xdata=90 const=40 code=7874
+creating hex file from ".\Output\UART0"...
+User command #1: .\output\hex2bin.exe .\output\UART0.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  00001EF2
+Starting address: 00000000
+Max Length:       7923
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 00001EF2
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM4 .\output\UART0.bin
+PortName[COM4]
+BaudRate[115200]
+FileSize[7923]
+.
+.
+Connect OK
+.Erase Done
+--------------------------------------------------------100%
+Update Done
+".\Output\UART0" - 0 Error(s), 0 Warning(s).
+Build target 'micor-null'
+linking...
+Program Size: data=9.2 xdata=90 const=40 code=7874
+creating hex file from ".\Output\UART0"...
+User command #1: .\output\hex2bin.exe .\output\UART0.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  00001EF2
+Starting address: 00000000
+Max Length:       7923
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 00001EF2
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM4 .\output\UART0.bin
+PortName[COM4]
+BaudRate[115200]
+FileSize[7923]
+.
+.
+Connect OK
+.Erase Done
+--------------------------------------------------------100%
+Update Done
+".\Output\UART0" - 0 Error(s), 0 Warning(s).
+Build target 'micor-null'
+linking...
+Program Size: data=9.2 xdata=90 const=40 code=7874
+creating hex file from ".\Output\UART0"...
+User command #1: .\output\hex2bin.exe .\output\UART0.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  00001EF2
+Starting address: 00000000
+Max Length:       7923
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 00001EF2
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM4 .\output\UART0.bin
+PortName[COM4]
+BaudRate[115200]
+FileSize[7923]
+.
+.
+Connect OK
+.Erase Done
+--------------------------------------------------------100%
+Update Done
+".\Output\UART0" - 0 Error(s), 0 Warning(s).
+Build target 'micor-null'
+linking...
+Program Size: data=9.2 xdata=90 const=40 code=7874
+creating hex file from ".\Output\UART0"...
+User command #1: .\output\hex2bin.exe .\output\UART0.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  00001EF2
+Starting address: 00000000
+Max Length:       7923
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 00001EF2
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM4 .\output\UART0.bin
+PortName[COM4]
+BaudRate[115200]
+FileSize[7923]
+.
+.
+.
+.
+Connect OK
+.Erase Done
+--------------------------------------------------------100%
+Update Done
+".\Output\UART0" - 0 Error(s), 0 Warning(s).
+Build target 'micor-null'
+linking...
+Program Size: data=9.2 xdata=90 const=40 code=7874
+creating hex file from ".\Output\UART0"...
+User command #1: .\output\hex2bin.exe .\output\UART0.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  00001EF2
+Starting address: 00000000
+Max Length:       7923
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 00001EF2
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM4 .\output\UART0.bin
+PortName[COM4]
+BaudRate[115200]
+FileSize[7923]
+.
+.
+.
+Connect OK
+.Erase Done
+--------------------------------------------------------100%
+Update Done
+".\Output\UART0" - 0 Error(s), 0 Warning(s).
+Build target 'micor-null'
+linking...
+Program Size: data=9.2 xdata=90 const=40 code=7874
+creating hex file from ".\Output\UART0"...
+User command #1: .\output\hex2bin.exe .\output\UART0.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  00001EF2
+Starting address: 00000000
+Max Length:       7923
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 00001EF2
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM4 .\output\UART0.bin
+PortName[COM4]
+BaudRate[115200]
+FileSize[7923]
+.
+.
+Connect OK
+.Erase Done
+--------------------------------------------------------100%
+Update Done
+".\Output\UART0" - 0 Error(s), 0 Warning(s).
+Build target 'micor-null'
+linking...
+Program Size: data=9.2 xdata=90 const=40 code=7874
+creating hex file from ".\Output\UART0"...
+User command #1: .\output\hex2bin.exe .\output\UART0.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  00001EF2
+Starting address: 00000000
+Max Length:       7923
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 00001EF2
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM4 .\output\UART0.bin
+PortName[COM4]
+BaudRate[115200]
+FileSize[7923]
+.
+.
+.
+Connect OK
+.Erase Done
+--------------------------------------------------------100%
+Update Done
+".\Output\UART0" - 0 Error(s), 0 Warning(s).
+Build target 'micor-null'
+compiling UART0.c...
+Source\UART0.c(68): warning C294: unreachable code
+linking...
+Program Size: data=9.2 xdata=75 const=20 code=4227
+creating hex file from ".\Output\UART0"...
+User command #1: .\output\hex2bin.exe .\output\UART0.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  000010AB
+Starting address: 00000000
+Max Length:       4268
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 000010AB
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM4 .\output\UART0.bin
+PortName[COM4]
+BaudRate[115200]
+FileSize[4268]
+.
+.
+.
+Connect OK
+.Erase Done
+-------------------------------100%
+Update Done
+".\Output\UART0" - 0 Error(s), 1 Warning(s).
+Build target 'micor-null'
+linking...
+Program Size: data=9.2 xdata=75 const=20 code=4227
+creating hex file from ".\Output\UART0"...
+User command #1: .\output\hex2bin.exe .\output\UART0.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  000010AB
+Starting address: 00000000
+Max Length:       4268
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 000010AB
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM4 .\output\UART0.bin
+PortName[COM4]
+BaudRate[115200]
+FileSize[4268]
+.
+.
+Connect OK
+.Erase Done
+-------------------------------100%
+Update Done
+".\Output\UART0" - 0 Error(s), 0 Warning(s).
+Build target 'micor-null'
+linking...
+Program Size: data=9.2 xdata=75 const=20 code=4227
+creating hex file from ".\Output\UART0"...
+User command #1: .\output\hex2bin.exe .\output\UART0.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  000010AB
+Starting address: 00000000
+Max Length:       4268
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 000010AB
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM4 .\output\UART0.bin
+PortName[COM4]
+BaudRate[115200]
+FileSize[4268]
+.
+.
+Connect OK
+.Erase Done
+-------------------------------100%
+Update Done
+".\Output\UART0" - 0 Error(s), 0 Warning(s).
+Build target 'micor-null'
+linking...
+Program Size: data=9.2 xdata=75 const=20 code=4227
+creating hex file from ".\Output\UART0"...
+User command #1: .\output\hex2bin.exe .\output\UART0.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  000010AB
+Starting address: 00000000
+Max Length:       4268
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 000010AB
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM4 .\output\UART0.bin
+PortName[COM4]
+BaudRate[115200]
+FileSize[4268]
+.
+.
+Connect OK
+.Erase Done
+-------------------------------100%
+Update Done
+".\Output\UART0" - 0 Error(s), 0 Warning(s).
+Build target 'micor-null'
+linking...
+Program Size: data=9.2 xdata=75 const=20 code=4227
+creating hex file from ".\Output\UART0"...
+User command #1: .\output\hex2bin.exe .\output\UART0.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  000010AB
+Starting address: 00000000
+Max Length:       4268
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 000010AB
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM4 .\output\UART0.bin
+PortName[COM4]
+BaudRate[115200]
+FileSize[4268]
+.
+.
+Connect OK
+.Erase Done
+-------------------------------100%
+Update Done
+".\Output\UART0" - 0 Error(s), 0 Warning(s).
+Build target 'micor-null'
+linking...
+Program Size: data=9.2 xdata=75 const=20 code=4227
+creating hex file from ".\Output\UART0"...
+User command #1: .\output\hex2bin.exe .\output\UART0.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  000010AB
+Starting address: 00000000
+Max Length:       4268
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 000010AB
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM4 .\output\UART0.bin
+PortName[COM4]
+BaudRate[115200]
+FileSize[4268]
+.
+.
+Connect OK
+.Erase Done
+-------------连到系统上的设备没有发挥作用。
+未经处理的异常:  System.IO.IOException: 指定的端口不存在。
+   在 System.IO.Ports.InternalResources.WinIOError(Int32 errorCode, String str)
+   在 System.IO.Ports.InternalResources.WinIOError()
+   在 System.IO.Ports.SerialStream.Dispose(Boolean disposing)
+   在 System.IO.Ports.SerialStream.Finalize()
+Target not created
+Build target 'micor-null'
+linking...
+Program Size: data=9.2 xdata=75 const=20 code=4227
+creating hex file from ".\Output\UART0"...
+User command #1: .\output\hex2bin.exe .\output\UART0.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  000010AB
+Starting address: 00000000
+Max Length:       4268
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 000010AB
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM4 .\output\UART0.bin
+PortName[COM4]
+BaudRate[115200]
+FileSize[4268]
+.
+Connect OK
+.Erase Done
+-------------------------------100%
+Update Done
+".\Output\UART0" - 0 Error(s), 0 Warning(s).
+Build target 'micor-null'
+linking...
+Program Size: data=9.2 xdata=75 const=20 code=4227
+creating hex file from ".\Output\UART0"...
+User command #1: .\output\hex2bin.exe .\output\UART0.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  000010AB
+Starting address: 00000000
+Max Length:       4268
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 000010AB
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM4 .\output\UART0.bin
+PortName[COM4]
+BaudRate[115200]
+FileSize[4268]
+.
+.
+Connect OK
+.Erase Done
+-------------------------------100%
+Update Done
+".\Output\UART0" - 0 Error(s), 0 Warning(s).
+Build target 'micor-null'
+linking...
+Program Size: data=9.2 xdata=75 const=20 code=4227
+creating hex file from ".\Output\UART0"...
+User command #1: .\output\hex2bin.exe .\output\UART0.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  000010AB
+Starting address: 00000000
+Max Length:       4268
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 000010AB
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM4 .\output\UART0.bin
+PortName[COM4]
+BaudRate[115200]
+FileSize[4268]
+.
+.
+Connect OK
+.Erase Done
+-------------------------------100%
+Update Done
+".\Output\UART0" - 0 Error(s), 0 Warning(s).
+Build target 'micor-null'
+linking...
+Program Size: data=9.2 xdata=75 const=20 code=4227
+creating hex file from ".\Output\UART0"...
+User command #1: .\output\hex2bin.exe .\output\UART0.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  000010AB
+Starting address: 00000000
+Max Length:       4268
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 000010AB
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM4 .\output\UART0.bin
+PortName[COM4]
+BaudRate[115200]
+FileSize[4268]
+.
+.
+Connect OK
+.Erase Done
+-------------------------------100%
+Update Done
+".\Output\UART0" - 0 Error(s), 0 Warning(s).
+Build target 'micor-null'
+linking...
+Program Size: data=9.2 xdata=75 const=20 code=4227
+creating hex file from ".\Output\UART0"...
+User command #1: .\output\hex2bin.exe .\output\UART0.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  000010AB
+Starting address: 00000000
+Max Length:       4268
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 000010AB
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM4 .\output\UART0.bin
+PortName[COM4]
+BaudRate[115200]
+FileSize[4268]
+.
+.
+Connect OK
+.Erase Done
+-------------------------------100%
+Update Done
+".\Output\UART0" - 0 Error(s), 0 Warning(s).
+Build target 'micor-null'
+linking...
+Program Size: data=9.2 xdata=75 const=20 code=4227
+creating hex file from ".\Output\UART0"...
+User command #1: .\output\hex2bin.exe .\output\UART0.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  000010AB
+Starting address: 00000000
+Max Length:       4268
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 000010AB
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM4 .\output\UART0.bin
+PortName[COM4]
+BaudRate[115200]
+FileSize[4268]
+.
+.
+Connect OK
+.Erase Done
+-------------------------------100%
+Update Done
+".\Output\UART0" - 0 Error(s), 0 Warning(s).
+Build target 'micor-null'
+compiling UART0.c...
+linking...
+Program Size: data=9.2 xdata=90 const=40 code=7863
+creating hex file from ".\Output\UART0"...
+User command #1: .\output\hex2bin.exe .\output\UART0.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  00001EE7
+Starting address: 00000000
+Max Length:       7912
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 00001EE7
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM4 .\output\UART0.bin
+PortName[COM4]
+BaudRate[115200]
+FileSize[7912]
+.
+.
+Connect OK
+.Erase Done
+--------------------------------------------------------100%
+Update Done
+".\Output\UART0" - 0 Error(s), 0 Warning(s).
+Build target 'micor-null'
+linking...
+Program Size: data=9.2 xdata=90 const=40 code=7863
+creating hex file from ".\Output\UART0"...
+User command #1: .\output\hex2bin.exe .\output\UART0.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  00001EE7
+Starting address: 00000000
+Max Length:       7912
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 00001EE7
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM4 .\output\UART0.bin
+PortName[COM4]
+BaudRate[115200]
+FileSize[7912]
+Connect OK
+.Erase Done
+--------------------------------------------------------100%
+Update Done
+".\Output\UART0" - 0 Error(s), 0 Warning(s).
+Build target 'micor-null'
+linking...
+Program Size: data=9.2 xdata=90 const=40 code=7863
+creating hex file from ".\Output\UART0"...
+User command #1: .\output\hex2bin.exe .\output\UART0.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  00001EE7
+Starting address: 00000000
+Max Length:       7912
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 00001EE7
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM4 .\output\UART0.bin
+PortName[COM4]
+BaudRate[115200]
+FileSize[7912]
+Connect OK
+.Erase Done
+--------------------------------------------------------100%
+Update Done
+".\Output\UART0" - 0 Error(s), 0 Warning(s).
+Build target 'micor-null'
+compiling Common.c...
+linking...
+Program Size: data=9.2 xdata=90 const=40 code=7860
+creating hex file from ".\Output\UART0"...
+User command #1: .\output\hex2bin.exe .\output\UART0.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  00001EE4
+Starting address: 00000000
+Max Length:       7909
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 00001EE4
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM4 .\output\UART0.bin
+PortName[COM4]
+BaudRate[115200]
+FileSize[7909]
+Connect OK
+.Erase Done
+--------------------------------------------------------100%
+Update Done
+".\Output\UART0" - 0 Error(s), 0 Warning(s).
+Build target 'micor-null'
+linking...
+Program Size: data=9.2 xdata=90 const=40 code=7860
+creating hex file from ".\Output\UART0"...
+User command #1: .\output\hex2bin.exe .\output\UART0.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  00001EE4
+Starting address: 00000000
+Max Length:       7909
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 00001EE4
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM4 .\output\UART0.bin
+PortName[COM4]
+BaudRate[115200]
+FileSize[7909]
+Connect Fail
+".\Output\UART0" - 0 Error(s), 0 Warning(s).
+Build target 'micor-null'
+linking...
+Program Size: data=9.2 xdata=90 const=40 code=7860
+creating hex file from ".\Output\UART0"...
+User command #1: .\output\hex2bin.exe .\output\UART0.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  00001EE4
+Starting address: 00000000
+Max Length:       7909
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 00001EE4
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM4 .\output\UART0.bin
+PortName[COM4]
+BaudRate[115200]
+FileSize[7909]
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+..........未将对象引用设置到对象的实例。
+".\Output\UART0" - 0 Error(s), 0 Warning(s).
+Build target 'micor-null'
+linking...
+Program Size: data=9.2 xdata=90 const=40 code=7860
+creating hex file from ".\Output\UART0"...
+User command #1: .\output\hex2bin.exe .\output\UART0.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  00001EE4
+Starting address: 00000000
+Max Length:       7909
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 00001EE4
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM4 .\output\UART0.bin
+PortName[COM4]
+BaudRate[115200]
+FileSize[7909]
+.
+Connect OK
+.Erase Done
+--------------------------------------------------------100%
+Update Done
+".\Output\UART0" - 0 Error(s), 0 Warning(s).
+Build target 'micor-null'
+linking...
+Program Size: data=9.2 xdata=90 const=40 code=7860
+creating hex file from ".\Output\UART0"...
+User command #1: .\output\hex2bin.exe .\output\UART0.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  00001EE4
+Starting address: 00000000
+Max Length:       7909
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 00001EE4
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM4 .\output\UART0.bin
+PortName[COM4]
+BaudRate[115200]
+FileSize[7909]
+Connect Fail
+".\Output\UART0" - 0 Error(s), 0 Warning(s).
+Build target 'micor-null'
+compiling Common.c...
+linking...
+Program Size: data=9.2 xdata=90 const=40 code=7863
+creating hex file from ".\Output\UART0"...
+User command #1: .\output\hex2bin.exe .\output\UART0.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  00001EE7
+Starting address: 00000000
+Max Length:       7912
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 00001EE7
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM4 .\output\UART0.bin
+PortName[COM4]
+BaudRate[115200]
+FileSize[7912]
+Connect Fail
+".\Output\UART0" - 0 Error(s), 0 Warning(s).
+Build target 'micor-null'
+linking...
+Program Size: data=9.2 xdata=90 const=40 code=7863
+creating hex file from ".\Output\UART0"...
+User command #1: .\output\hex2bin.exe .\output\UART0.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  00001EE7
+Starting address: 00000000
+Max Length:       7912
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 00001EE7
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM4 .\output\UART0.bin
+PortName[COM4]
+BaudRate[115200]
+FileSize[7912]
+Connect Fail
+".\Output\UART0" - 0 Error(s), 0 Warning(s).
+Build target 'micor-null'
+linking...
+Program Size: data=9.2 xdata=90 const=40 code=7863
+creating hex file from ".\Output\UART0"...
+User command #1: .\output\hex2bin.exe .\output\UART0.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  00001EE7
+Starting address: 00000000
+Max Length:       7912
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 00001EE7
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM4 .\output\UART0.bin
+PortName[COM4]
+BaudRate[115200]
+FileSize[7912]
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+Connect Fail
+".\Output\UART0" - 0 Error(s), 0 Warning(s).
+Build target 'micor-null'
+linking...
+Program Size: data=9.2 xdata=90 const=40 code=7863
+creating hex file from ".\Output\UART0"...
+User command #1: .\output\hex2bin.exe .\output\UART0.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  00001EE7
+Starting address: 00000000
+Max Length:       7912
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 00001EE7
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM4 .\output\UART0.bin
+PortName[COM4]
+BaudRate[115200]
+FileSize[7912]
+.
+Connect OK
+.Erase Done
+--------------------------------------------------------100%
+Update Done
+".\Output\UART0" - 0 Error(s), 0 Warning(s).
+Build target 'micor-null'
+linking...
+Program Size: data=9.2 xdata=90 const=40 code=7863
+creating hex file from ".\Output\UART0"...
+User command #1: .\output\hex2bin.exe .\output\UART0.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  00001EE7
+Starting address: 00000000
+Max Length:       7912
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 00001EE7
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM4 .\output\UART0.bin
+PortName[COM4]
+BaudRate[115200]
+FileSize[7912]
+Connect OK
+.Erase Done
+--------------------------------------------------------100%
+Update Done
+".\Output\UART0" - 0 Error(s), 0 Warning(s).
+Build target 'micor-null'
+linking...
+Program Size: data=9.2 xdata=90 const=40 code=7863
+creating hex file from ".\Output\UART0"...
+User command #1: .\output\hex2bin.exe .\output\UART0.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  00001EE7
+Starting address: 00000000
+Max Length:       7912
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 00001EE7
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM4 .\output\UART0.bin
+PortName[COM4]
+BaudRate[115200]
+FileSize[7912]
+Connect OK
+.Erase Done
+--------------------------------------------------------100%
+Update Done
+".\Output\UART0" - 0 Error(s), 0 Warning(s).
+Build target 'micor-null'
+linking...
+Program Size: data=9.2 xdata=90 const=40 code=7863
+creating hex file from ".\Output\UART0"...
+User command #1: .\output\hex2bin.exe .\output\UART0.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  00001EE7
+Starting address: 00000000
+Max Length:       7912
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 00001EE7
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM4 .\output\UART0.bin
+PortName[COM4]
+BaudRate[115200]
+FileSize[7912]
+Connect OK
+.Erase Done
+--------------------------------------------------------100%
+Update Done
+".\Output\UART0" - 0 Error(s), 0 Warning(s).
+Build target 'micor-null'
+linking...
+Program Size: data=9.2 xdata=90 const=40 code=7863
+creating hex file from ".\Output\UART0"...
+User command #1: .\output\hex2bin.exe .\output\UART0.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  00001EE7
+Starting address: 00000000
+Max Length:       7912
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 00001EE7
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM4 .\output\UART0.bin
+PortName[COM4]
+BaudRate[115200]
+FileSize[7912]
+Connect OK
+.Erase Done
+--------------------------------------------------------100%
+Update Done
+".\Output\UART0" - 0 Error(s), 0 Warning(s).
+Build target 'micor-null'
+linking...
+Program Size: data=9.2 xdata=90 const=40 code=7863
+creating hex file from ".\Output\UART0"...
+User command #1: .\output\hex2bin.exe .\output\UART0.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  00001EE7
+Starting address: 00000000
+Max Length:       7912
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 00001EE7
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM4 .\output\UART0.bin
+PortName[COM4]
+BaudRate[115200]
+FileSize[7912]
+.....Connect Fail
+".\Output\UART0" - 0 Error(s), 0 Warning(s).
+Build target 'micor-null'
+linking...
+Program Size: data=9.2 xdata=90 const=40 code=7863
+creating hex file from ".\Output\UART0"...
+User command #1: .\output\hex2bin.exe .\output\UART0.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  00001EE7
+Starting address: 00000000
+Max Length:       7912
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 00001EE7
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM4 .\output\UART0.bin
+PortName[COM4]
+BaudRate[115200]
+FileSize[7912]
+.....Connect Fail
+".\Output\UART0" - 0 Error(s), 0 Warning(s).
+Build target 'micor-null'
+linking...
+Program Size: data=9.2 xdata=90 const=40 code=7863
+creating hex file from ".\Output\UART0"...
+User command #1: .\output\hex2bin.exe .\output\UART0.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  00001EE7
+Starting address: 00000000
+Max Length:       7912
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 00001EE7
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM4 .\output\UART0.bin
+PortName[COM4]
+BaudRate[115200]
+FileSize[7912]
+Connect OK
+.Erase Done
+------..........Update Fail
+".\Output\UART0" - 0 Error(s), 0 Warning(s).
+Build target 'micor-null'
+linking...
+Program Size: data=9.2 xdata=90 const=40 code=7863
+creating hex file from ".\Output\UART0"...
+User command #1: .\output\hex2bin.exe .\output\UART0.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  00001EE7
+Starting address: 00000000
+Max Length:       7912
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 00001EE7
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM4 .\output\UART0.bin
+PortName[COM4]
+BaudRate[115200]
+FileSize[7912]
+.
+Connect OK
+.Erase Done
+--------------------------------------------------------100%
+Update Done
+".\Output\UART0" - 0 Error(s), 0 Warning(s).
+Build target 'micor-null'
+linking...
+Program Size: data=9.2 xdata=90 const=40 code=7863
+creating hex file from ".\Output\UART0"...
+User command #1: .\output\hex2bin.exe .\output\UART0.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  00001EE7
+Starting address: 00000000
+Max Length:       7912
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 00001EE7
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM4 .\output\UART0.bin
+PortName[COM4]
+BaudRate[115200]
+FileSize[7912]
+Connect OK
+.Erase Done
+--------------------------------------------------------100%
+Update Done
+".\Output\UART0" - 0 Error(s), 0 Warning(s).
+Build target 'micor-null'
+linking...
+Program Size: data=9.2 xdata=90 const=40 code=7863
+creating hex file from ".\Output\UART0"...
+User command #1: .\output\hex2bin.exe .\output\UART0.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  00001EE7
+Starting address: 00000000
+Max Length:       7912
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 00001EE7
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM4 .\output\UART0.bin
+PortName[COM4]
+BaudRate[115200]
+FileSize[7912]
+Connect OK
+.Erase Done
+--------------------------------------------------------100%
+Update Done
+".\Output\UART0" - 0 Error(s), 0 Warning(s).
+Build target 'micor-null'
+linking...
+Program Size: data=9.2 xdata=90 const=40 code=7863
+creating hex file from ".\Output\UART0"...
+User command #1: .\output\hex2bin.exe .\output\UART0.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  00001EE7
+Starting address: 00000000
+Max Length:       7912
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 00001EE7
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM4 .\output\UART0.bin
+PortName[COM4]
+BaudRate[115200]
+FileSize[7912]
+Connect Fail
+".\Output\UART0" - 0 Error(s), 0 Warning(s).
+Build target 'micor-null'
+linking...
+Program Size: data=9.2 xdata=90 const=40 code=7863
+creating hex file from ".\Output\UART0"...
+User command #1: .\output\hex2bin.exe .\output\UART0.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  00001EE7
+Starting address: 00000000
+Max Length:       7912
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 00001EE7
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM4 .\output\UART0.bin
+PortName[COM4]
+BaudRate[115200]
+FileSize[7912]
+Connect Fail
+".\Output\UART0" - 0 Error(s), 0 Warning(s).
+Build target 'micor-null'
+linking...
+Program Size: data=9.2 xdata=90 const=40 code=7863
+creating hex file from ".\Output\UART0"...
+User command #1: .\output\hex2bin.exe .\output\UART0.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  00001EE7
+Starting address: 00000000
+Max Length:       7912
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 00001EE7
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM4 .\output\UART0.bin
+PortName[COM4]
+BaudRate[115200]
+FileSize[7912]
+Connect Fail
+".\Output\UART0" - 0 Error(s), 0 Warning(s).
+Build target 'micor-null'
+linking...
+Program Size: data=9.2 xdata=90 const=40 code=7863
+creating hex file from ".\Output\UART0"...
+User command #1: .\output\hex2bin.exe .\output\UART0.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  00001EE7
+Starting address: 00000000
+Max Length:       7912
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 00001EE7
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM4 .\output\UART0.bin
+PortName[COM4]
+BaudRate[115200]
+FileSize[7912]
+Connect Fail
+".\Output\UART0" - 0 Error(s), 0 Warning(s).
+Build target 'micor-null'
+linking...
+Program Size: data=9.2 xdata=90 const=40 code=7863
+creating hex file from ".\Output\UART0"...
+User command #1: .\output\hex2bin.exe .\output\UART0.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  00001EE7
+Starting address: 00000000
+Max Length:       7912
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 00001EE7
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM4 .\output\UART0.bin
+PortName[COM4]
+BaudRate[115200]
+FileSize[7912]
+Connect Fail
+".\Output\UART0" - 0 Error(s), 0 Warning(s).
+Build target 'micor-null'
+linking...
+Program Size: data=9.2 xdata=90 const=40 code=7863
+creating hex file from ".\Output\UART0"...
+User command #1: .\output\hex2bin.exe .\output\UART0.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  00001EE7
+Starting address: 00000000
+Max Length:       7912
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 00001EE7
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM4 .\output\UART0.bin
+PortName[COM4]
+BaudRate[115200]
+FileSize[7912]
+Connect OK
+.Erase Done
+--------------------------------------------------------100%
+Update Done
+".\Output\UART0" - 0 Error(s), 0 Warning(s).
+Build target 'micor-null'
+linking...
+Program Size: data=9.2 xdata=90 const=40 code=7863
+creating hex file from ".\Output\UART0"...
+User command #1: .\output\hex2bin.exe .\output\UART0.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  00001EE7
+Starting address: 00000000
+Max Length:       7912
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 00001EE7
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM4 .\output\UART0.bin
+PortName[COM4]
+BaudRate[115200]
+FileSize[7912]
+Connect OK
+.Erase Done
+--------------------------------------------------------100%
+Update Done
+".\Output\UART0" - 0 Error(s), 0 Warning(s).
+Build target 'micor-null'
+linking...
+Program Size: data=9.2 xdata=90 const=40 code=7863
+creating hex file from ".\Output\UART0"...
+User command #1: .\output\hex2bin.exe .\output\UART0.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  00001EE7
+Starting address: 00000000
+Max Length:       7912
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 00001EE7
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM4 .\output\UART0.bin
+PortName[COM4]
+BaudRate[115200]
+FileSize[7912]
+Connect OK
+.Erase Done
+--------------------------------------------------------100%
+Update Done
+".\Output\UART0" - 0 Error(s), 0 Warning(s).
+Build target 'micor-null'
+linking...
+Program Size: data=9.2 xdata=90 const=40 code=7863
+creating hex file from ".\Output\UART0"...
+User command #1: .\output\hex2bin.exe .\output\UART0.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  00001EE7
+Starting address: 00000000
+Max Length:       7912
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 00001EE7
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM4 .\output\UART0.bin
+PortName[COM4]
+BaudRate[115200]
+FileSize[7912]
+.....Connect Fail
+".\Output\UART0" - 0 Error(s), 0 Warning(s).
+Build target 'micor-null'
+linking...
+Program Size: data=9.2 xdata=90 const=40 code=7863
+creating hex file from ".\Output\UART0"...
+User command #1: .\output\hex2bin.exe .\output\UART0.hex
+hex2bin v2.2, Copyright (C) 2015 Jacques Pelletier & contributors
+Allocate_Memory_and_Rewind:
+Lowest address:   00000000
+Highest address:  00001EE7
+Starting address: 00000000
+Max Length:       7912
+Binary file start = 00000000
+Records start     = 00000000
+Highest address   = 00001EE7
+Pad Byte          = FF
+User command #2: .\IAP.exe -w  COM4 .\output\UART0.bin
+PortName[COM4]
+BaudRate[115200]
+FileSize[7912]
+Connect OK
+.Erase Done
+--------------------------------------------------------100%
+Update Done
+".\Output\UART0" - 0 Error(s), 0 Warning(s).
